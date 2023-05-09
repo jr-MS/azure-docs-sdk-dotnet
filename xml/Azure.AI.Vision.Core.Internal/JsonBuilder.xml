@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
     <AssemblyVersion>1.24.0.28</AssemblyVersion>
     <AssemblyVersion>1.24.1.28</AssemblyVersion>
+    <AssemblyVersion>1.25.0.28</AssemblyVersion>
     <AssemblyVersion>1.25.1.26</AssemblyVersion>
     <AssemblyVersion>1.27.0.28</AssemblyVersion>
   </AssemblyInfo>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -81,6 +84,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -107,6 +111,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -130,6 +135,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -158,6 +164,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -186,6 +193,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -214,6 +222,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -242,6 +251,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -270,6 +280,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>

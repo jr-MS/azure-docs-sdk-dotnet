@@ -13,6 +13,7 @@
     <AssemblyVersion>1.23.0.28</AssemblyVersion>
     <AssemblyVersion>1.24.0.28</AssemblyVersion>
     <AssemblyVersion>1.24.1.28</AssemblyVersion>
+    <AssemblyVersion>1.25.0.28</AssemblyVersion>
     <AssemblyVersion>1.25.1.26</AssemblyVersion>
     <AssemblyVersion>1.27.0.28</AssemblyVersion>
   </AssemblyInfo>
@@ -22,7 +23,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Class that defines embedded (offline) speech configuration.
+            Class that defines embedded (offline) configurations for speech recognition and speech synthesis.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -43,6 +44,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -58,7 +60,8 @@
             or a direct path to a specific model folder.
             </param>
         <summary>
-            Creates an instance of the embedded speech config with a specified offline model path.
+            Creates an instance of the embedded speech config with a specified offline model path
+            for speech recognition and/or synthesis.
             </summary>
         <returns>A new embedded speech config instance.</returns>
         <remarks>To be added.</remarks>
@@ -80,6 +83,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -95,7 +99,8 @@
             or direct paths to specific model folders.
             </param>
         <summary>
-            Creates an instance of the embedded speech config with specified offline model paths.
+            Creates an instance of the embedded speech config with specified offline model paths
+            for speech recognition and/or synthesis.
             </summary>
         <returns>A new embedded speech config instance.</returns>
         <remarks>To be added.</remarks>
@@ -117,6 +122,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -151,6 +157,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -170,15 +177,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSpeechRecognitionModels">
-      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt; GetSpeechRecognitionModels ();" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt; GetSpeechRecognitionModels() cil managed" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt; GetSpeechRecognitionModels ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt; GetSpeechRecognitionModels() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CognitiveServices.Speech.EmbeddedSpeechConfig.GetSpeechRecognitionModels" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSpeechRecognitionModels () As ReadOnlyCollection(Of SpeechRecognitionModel)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="member this.GetSpeechRecognitionModels : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt;" Usage="embeddedSpeechConfig.GetSpeechRecognitionModels " FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt; GetSpeechRecognitionModels ();" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt; GetSpeechRecognitionModels() cil managed" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetSpeechRecognitionModels () As List(Of SpeechRecognitionModel)" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="F#" Value="member this.GetSpeechRecognitionModels : unit -&gt; System.Collections.Generic.List&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt;" Usage="embeddedSpeechConfig.GetSpeechRecognitionModels " FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpeechRecognitionModels () As List(Of SpeechRecognitionModel)" />
+      <MemberSignature Language="F#" Value="member this.GetSpeechRecognitionModels : unit -&gt; System.Collections.Generic.List&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt;" Usage="embeddedSpeechConfig.GetSpeechRecognitionModels " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
@@ -189,12 +192,12 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType FrameworkAlternate="azure-dotnet">System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt;</ReturnType>
-        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.Collections.Generic.List&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.CognitiveServices.Speech.SpeechRecognitionModel&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -221,6 +224,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -254,6 +258,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -289,6 +294,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -324,6 +330,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -359,6 +366,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -391,6 +399,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -426,6 +435,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -456,6 +466,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -486,6 +497,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -516,6 +528,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>

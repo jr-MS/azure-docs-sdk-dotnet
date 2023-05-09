@@ -16,6 +16,7 @@
     <AssemblyVersion>1.23.0.28</AssemblyVersion>
     <AssemblyVersion>1.24.0.28</AssemblyVersion>
     <AssemblyVersion>1.24.1.28</AssemblyVersion>
+    <AssemblyVersion>1.25.0.28</AssemblyVersion>
     <AssemblyVersion>1.25.1.26</AssemblyVersion>
     <AssemblyVersion>1.27.0.28</AssemblyVersion>
   </AssemblyInfo>
@@ -47,6 +48,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -81,6 +83,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -114,6 +117,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -146,6 +150,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -178,6 +183,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -210,6 +216,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -243,6 +250,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -276,6 +284,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -309,6 +318,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -342,6 +352,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -375,6 +386,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -408,6 +420,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -441,6 +454,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -474,6 +488,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -508,6 +523,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -541,6 +557,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -576,6 +593,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -609,6 +627,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -641,6 +660,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -677,6 +697,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -711,6 +732,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -745,6 +767,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -775,6 +798,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -810,6 +834,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -840,6 +865,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -875,6 +901,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -909,6 +936,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -942,6 +970,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -970,6 +999,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1010,6 +1040,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1045,6 +1076,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1081,6 +1113,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1113,6 +1146,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1146,6 +1180,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1179,6 +1214,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1216,6 +1252,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1251,6 +1288,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1286,6 +1324,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1319,6 +1358,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1353,6 +1393,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1386,6 +1427,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1419,6 +1461,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1444,6 +1487,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1479,6 +1523,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1514,6 +1559,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1549,6 +1595,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1584,6 +1631,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1616,6 +1664,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1652,6 +1701,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1685,6 +1735,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1715,6 +1766,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1747,6 +1799,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1782,6 +1835,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1815,6 +1869,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1851,6 +1906,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1887,6 +1943,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1917,6 +1974,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1949,6 +2007,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -1981,6 +2040,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2016,6 +2076,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2049,6 +2110,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2082,6 +2144,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2114,6 +2177,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2148,6 +2212,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2182,6 +2247,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2216,6 +2282,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2250,6 +2317,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2283,6 +2351,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2316,6 +2385,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2349,6 +2419,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2383,6 +2454,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2409,6 +2481,7 @@
         <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2442,6 +2515,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2477,6 +2551,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2511,6 +2586,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2538,6 +2614,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2566,6 +2643,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2597,6 +2675,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2625,6 +2704,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2658,6 +2738,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2691,6 +2772,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2721,6 +2803,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2733,29 +2816,6 @@
             Indicates which backend the synthesis is finished by.
             Read-only, available on speech synthesis results, except for the result in SynthesisStarted event.
             Added in version 1.19.0.
-            </summary>
-      </Docs>
-    </Member>
-    <Member MemberName="SpeechServiceResponse_SynthesisConnectionLatencyMs">
-      <MemberSignature Language="C#" Value="SpeechServiceResponse_SynthesisConnectionLatencyMs" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CognitiveServices.Speech.PropertyId SpeechServiceResponse_SynthesisConnectionLatencyMs = int32(5013)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.CognitiveServices.Speech.PropertyId.SpeechServiceResponse_SynthesisConnectionLatencyMs" />
-      <MemberSignature Language="VB.NET" Value="SpeechServiceResponse_SynthesisConnectionLatencyMs" />
-      <MemberSignature Language="F#" Value="SpeechServiceResponse_SynthesisConnectionLatencyMs = 5013" Usage="Microsoft.CognitiveServices.Speech.PropertyId.SpeechServiceResponse_SynthesisConnectionLatencyMs" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.27.0.28</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.CognitiveServices.Speech.PropertyId</ReturnType>
-      </ReturnValue>
-      <MemberValue>5013</MemberValue>
-      <Docs>
-        <summary>
-            The speech synthesis connection latency in milliseconds. Read-only, available on final speech synthesis results.
-            This measures the latency between when the synthesis is started to be processed, and the moment the HTTP/WebSocket connection is established.
-            Added in version 1.26.0.
             </summary>
       </Docs>
     </Member>
@@ -2777,6 +2837,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2810,6 +2871,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2822,52 +2884,6 @@
             The speech synthesis first byte latency in milliseconds. Read-only, available on final speech synthesis results.
             This measures the latency between when the synthesis is started to be processed, and the moment the first byte audio is available.
             Added in version 1.17.0.
-            </summary>
-      </Docs>
-    </Member>
-    <Member MemberName="SpeechServiceResponse_SynthesisNetworkLatencyMs">
-      <MemberSignature Language="C#" Value="SpeechServiceResponse_SynthesisNetworkLatencyMs" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CognitiveServices.Speech.PropertyId SpeechServiceResponse_SynthesisNetworkLatencyMs = int32(5014)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.CognitiveServices.Speech.PropertyId.SpeechServiceResponse_SynthesisNetworkLatencyMs" />
-      <MemberSignature Language="VB.NET" Value="SpeechServiceResponse_SynthesisNetworkLatencyMs" />
-      <MemberSignature Language="F#" Value="SpeechServiceResponse_SynthesisNetworkLatencyMs = 5014" Usage="Microsoft.CognitiveServices.Speech.PropertyId.SpeechServiceResponse_SynthesisNetworkLatencyMs" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.27.0.28</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.CognitiveServices.Speech.PropertyId</ReturnType>
-      </ReturnValue>
-      <MemberValue>5014</MemberValue>
-      <Docs>
-        <summary>
-            The speech synthesis network latency in milliseconds. Read-only, available on final speech synthesis results.
-            This measures the network round trip time.
-            Added in version 1.26.0.
-            </summary>
-      </Docs>
-    </Member>
-    <Member MemberName="SpeechServiceResponse_SynthesisServiceLatencyMs">
-      <MemberSignature Language="C#" Value="SpeechServiceResponse_SynthesisServiceLatencyMs" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CognitiveServices.Speech.PropertyId SpeechServiceResponse_SynthesisServiceLatencyMs = int32(5015)" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.CognitiveServices.Speech.PropertyId.SpeechServiceResponse_SynthesisServiceLatencyMs" />
-      <MemberSignature Language="VB.NET" Value="SpeechServiceResponse_SynthesisServiceLatencyMs" />
-      <MemberSignature Language="F#" Value="SpeechServiceResponse_SynthesisServiceLatencyMs = 5015" Usage="Microsoft.CognitiveServices.Speech.PropertyId.SpeechServiceResponse_SynthesisServiceLatencyMs" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.CognitiveServices.Speech.csharp</AssemblyName>
-        <AssemblyVersion>1.27.0.28</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.CognitiveServices.Speech.PropertyId</ReturnType>
-      </ReturnValue>
-      <MemberValue>5015</MemberValue>
-      <Docs>
-        <summary>
-            The speech synthesis service latency in milliseconds. Read-only, available on final speech synthesis results.
-            This measures the service processing time to synthesize the first byte of audio.
-            Added in version 1.26.0.
             </summary>
       </Docs>
     </Member>
@@ -2889,6 +2905,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
@@ -2923,6 +2940,7 @@
         <AssemblyVersion>1.23.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.0.28</AssemblyVersion>
         <AssemblyVersion>1.24.1.28</AssemblyVersion>
+        <AssemblyVersion>1.25.0.28</AssemblyVersion>
         <AssemblyVersion>1.25.1.26</AssemblyVersion>
         <AssemblyVersion>1.27.0.28</AssemblyVersion>
       </AssemblyInfo>
