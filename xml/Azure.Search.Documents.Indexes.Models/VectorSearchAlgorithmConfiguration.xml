@@ -1,0 +1,105 @@
+<Type Name="VectorSearchAlgorithmConfiguration" FullName="Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration">
+  <TypeSignature Language="C#" Value="public class VectorSearchAlgorithmConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VectorSearchAlgorithmConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class VectorSearchAlgorithmConfiguration" />
+  <TypeSignature Language="F#" Value="type VectorSearchAlgorithmConfiguration = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Search.Documents</AssemblyName>
+    <AssemblyVersion>11.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary> Contains configuration options specific to the algorithm used during indexing time. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VectorSearchAlgorithmConfiguration (string name, string kind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string kind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, kind As String)" />
+      <MemberSignature Language="F#" Value="new Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration : string * string -&gt; Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration" Usage="new Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration (name, kind)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="kind" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name"> The name to associate with this particular configuration. </param>
+        <param name="kind"> The name of the kind of algorithm being configured for use with vector search. Only `hnsw` is supported in the current preview. </param>
+        <summary> Initializes a new instance of VectorSearchAlgorithmConfiguration. </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="kind" /> is null. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HnswParameters">
+      <MemberSignature Language="C#" Value="public Azure.Search.Documents.Indexes.Models.HnswParameters HnswParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Search.Documents.Indexes.Models.HnswParameters HnswParameters" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration.HnswParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property HnswParameters As HnswParameters" />
+      <MemberSignature Language="F#" Value="member this.HnswParameters : Azure.Search.Documents.Indexes.Models.HnswParameters with get, set" Usage="Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration.HnswParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Search.Documents.Indexes.Models.HnswParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Contains the parameters specific to hnsw algorithm. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public string Kind { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Kind" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public Property Kind As String" />
+      <MemberSignature Language="F#" Value="member this.Kind : string with get, set" Usage="Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration.Kind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The name of the kind of algorithm being configured for use with vector search. Only `hnsw` is supported in the current preview. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Azure.Search.Documents.Indexes.Models.VectorSearchAlgorithmConfiguration.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Search.Documents</AssemblyName>
+        <AssemblyVersion>11.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The name to associate with this particular configuration. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

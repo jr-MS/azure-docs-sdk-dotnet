@@ -109,10 +109,14 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="assetMappingName"> The name of the asset mapping. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Maps a source asset in the sent share to a destination asset in the received share. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Maps a source asset in the sent share to a destination asset in the received share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
             Create an asset mapping on a received share
             
@@ -201,52 +205,53 @@
           <paramref name="receivedShareName" /> or <paramref name="assetMappingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call Create with required parameters and request content, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            var data = new {
-                kind = "AdlsGen2Account",
-                properties = new {
-                    assetId = "<73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a>",
-                    containerName = "<AdlsGen2AccountAssetMappingPropertiesContainerName>",
-                    folder = "<AdlsGen2AccountAssetMappingPropertiesFolder>",
-                    storageAccountResourceId = "<AdlsGen2AccountAssetMappingPropertiesStorageAccountResourceId>",
-                },
-            };
-            
-            var operation = client.Create(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data));
-            
-            BinaryData data = operation.WaitForCompletion();
-            JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-            Console.WriteLine(result.ToString());
-            ]]></code>
-            This sample shows how to call Create with all parameters and request content, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            var data = new {
-                kind = "AdlsGen2Account",
-                properties = new {
-                    assetId = "<73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a>",
-                    containerName = "<AdlsGen2AccountAssetMappingPropertiesContainerName>",
-                    folder = "<AdlsGen2AccountAssetMappingPropertiesFolder>",
-                    mountPath = "<AdlsGen2AccountAssetMappingPropertiesMountPath>",
-                    storageAccountResourceId = "<AdlsGen2AccountAssetMappingPropertiesStorageAccountResourceId>",
-                },
-            };
-            
-            var operation = client.Create(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data));
-            
-            BinaryData data = operation.WaitForCompletion();
-            JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call Create with required parameters and request content, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+var data = new {
+    properties = new {
+        assetId = "73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a",
+        containerName = "<containerName>",
+        folder = "<folder>",
+        storageAccountResourceId = "<storageAccountResourceId>",
+    },
+    kind = "AdlsGen2Account",
+};
+
+var operation = client.Create(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data));
+
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.ToString());
+]]></code>
+This sample shows how to call Create with all parameters and request content, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+var data = new {
+    properties = new {
+        assetId = "73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a",
+        containerName = "<containerName>",
+        folder = "<folder>",
+        mountPath = "<mountPath>",
+        storageAccountResourceId = "<storageAccountResourceId>",
+    },
+    kind = "AdlsGen2Account",
+};
+
+var operation = client.Create(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data), new RequestContext());
+
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
@@ -275,10 +280,14 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="assetMappingName"> The name of the asset mapping. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Maps a source asset in the sent share to a destination asset in the received share. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Maps a source asset in the sent share to a destination asset in the received share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
             Create an asset mapping on a received share
             
@@ -367,52 +376,53 @@
           <paramref name="receivedShareName" /> or <paramref name="assetMappingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call CreateAsync with required parameters and request content, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            var data = new {
-                kind = "AdlsGen2Account",
-                properties = new {
-                    assetId = "<73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a>",
-                    containerName = "<AdlsGen2AccountAssetMappingPropertiesContainerName>",
-                    folder = "<AdlsGen2AccountAssetMappingPropertiesFolder>",
-                    storageAccountResourceId = "<AdlsGen2AccountAssetMappingPropertiesStorageAccountResourceId>",
-                },
-            };
-            
-            var operation = await client.CreateAsync(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data));
-            
-            BinaryData data = await operation.WaitForCompletionAsync();
-            JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-            Console.WriteLine(result.ToString());
-            ]]></code>
-            This sample shows how to call CreateAsync with all parameters and request content, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            var data = new {
-                kind = "AdlsGen2Account",
-                properties = new {
-                    assetId = "<73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a>",
-                    containerName = "<AdlsGen2AccountAssetMappingPropertiesContainerName>",
-                    folder = "<AdlsGen2AccountAssetMappingPropertiesFolder>",
-                    mountPath = "<AdlsGen2AccountAssetMappingPropertiesMountPath>",
-                    storageAccountResourceId = "<AdlsGen2AccountAssetMappingPropertiesStorageAccountResourceId>",
-                },
-            };
-            
-            var operation = await client.CreateAsync(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data));
-            
-            BinaryData data = await operation.WaitForCompletionAsync();
-            JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call CreateAsync with required parameters and request content, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+var data = new {
+    properties = new {
+        assetId = "73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a",
+        containerName = "<containerName>",
+        folder = "<folder>",
+        storageAccountResourceId = "<storageAccountResourceId>",
+    },
+    kind = "AdlsGen2Account",
+};
+
+var operation = await client.CreateAsync(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data));
+
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.ToString());
+]]></code>
+This sample shows how to call CreateAsync with all parameters and request content, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+var data = new {
+    properties = new {
+        assetId = "73f411fe-4f43-4b4b-9cbd-6828d8f4cf9a",
+        containerName = "<containerName>",
+        folder = "<folder>",
+        mountPath = "<mountPath>",
+        storageAccountResourceId = "<storageAccountResourceId>",
+    },
+    kind = "AdlsGen2Account",
+};
+
+var operation = await client.CreateAsync(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", RequestContent.Create(data), new RequestContext());
+
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -441,7 +451,11 @@
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="assetMappingName"> The name of the asset mapping. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delete AssetMapping in a receivedShare. </summary>
+        <summary>
+            [Protocol Method] Delete AssetMapping in a receivedShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks> Delete an asset mapping for a received share. </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -450,16 +464,15 @@
           <paramref name="receivedShareName" /> or <paramref name="assetMappingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call Delete with required parameters.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            var operation = client.Delete(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>");
-            
-            var response = operation.WaitForCompletionResponse();
-            Console.WriteLine(response.Status)
-            ]]></code></example>
+This sample shows how to call Delete with required parameters.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+var operation = client.Delete(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", new RequestContext());
+
+Console.WriteLine(operation.GetRawResponse().Status);
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
@@ -488,7 +501,11 @@
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="assetMappingName"> The name of the asset mapping. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delete AssetMapping in a receivedShare. </summary>
+        <summary>
+            [Protocol Method] Delete AssetMapping in a receivedShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks> Delete an asset mapping for a received share. </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -497,16 +514,15 @@
           <paramref name="receivedShareName" /> or <paramref name="assetMappingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call DeleteAsync with required parameters.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            var operation = await client.DeleteAsync(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>");
-            
-            var response = await operation.WaitForCompletionResponseAsync();
-            Console.WriteLine(response.Status)
-            ]]></code></example>
+This sample shows how to call DeleteAsync with required parameters.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+var operation = await client.DeleteAsync(WaitUntil.Completed, "<receivedShareName>", "<assetMappingName>", new RequestContext());
+
+Console.WriteLine(operation.GetRawResponse().Status);
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAssetMapping">
@@ -532,8 +548,12 @@
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="assetMappingName"> The name of the asset mapping. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get AssetMapping in a receivedShare. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get AssetMapping in a receivedShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
             Get an asset mapping for a received share
             
@@ -583,19 +603,19 @@
           <paramref name="receivedShareName" /> or <paramref name="assetMappingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAssetMapping with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            Response response = client.GetAssetMapping("<receivedShareName>", "<assetMappingName>");
-            
-            JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call GetAssetMapping with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+Response response = client.GetAssetMapping("<receivedShareName>", "<assetMappingName>", new RequestContext());
+
+JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAssetMappingAsync">
@@ -621,8 +641,12 @@
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="assetMappingName"> The name of the asset mapping. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get AssetMapping in a receivedShare. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get AssetMapping in a receivedShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
             Get an asset mapping for a received share
             
@@ -672,19 +696,19 @@
           <paramref name="receivedShareName" /> or <paramref name="assetMappingName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAssetMappingAsync with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            Response response = await client.GetAssetMappingAsync("<receivedShareName>", "<assetMappingName>");
-            
-            JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call GetAssetMappingAsync with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+Response response = await client.GetAssetMappingAsync("<receivedShareName>", "<assetMappingName>", new RequestContext());
+
+JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAssetMappings">
@@ -714,7 +738,11 @@
         <param name="filter"> Filters the results using OData syntax. </param>
         <param name="orderby"> Sorts the results using OData syntax. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List AssetMappings in a received share. </summary>
+        <summary>
+            [Protocol Method] List AssetMappings in a received share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
             List asset mappings for a received share
@@ -737,31 +765,32 @@
           <paramref name="receivedShareName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAssetMappings with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            foreach (var data in client.GetAssetMappings("<receivedShareName>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.ToString());
-            }
-            ]]></code>
-            This sample shows how to call GetAssetMappings with all parameters, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            foreach (var data in client.GetAssetMappings("<receivedShareName>", "<skipToken>", "<filter>", "<orderby>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.GetProperty("id").ToString());
-                Console.WriteLine(result.GetProperty("name").ToString());
-                Console.WriteLine(result.GetProperty("type").ToString());
-                Console.WriteLine(result.GetProperty("kind").ToString());
-            }
-            ]]></code></example>
+This sample shows how to call GetAssetMappings with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+foreach (var item in client.GetAssetMappings("<receivedShareName>"))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.ToString());
+}
+]]></code>
+This sample shows how to call GetAssetMappings with all parameters, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+foreach (var item in client.GetAssetMappings("<receivedShareName>", "<skipToken>", "<filter>", "<orderby>", new RequestContext()))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.GetProperty("id").ToString());
+    Console.WriteLine(result.GetProperty("name").ToString());
+    Console.WriteLine(result.GetProperty("type").ToString());
+}
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAssetMappingsAsync">
@@ -791,7 +820,11 @@
         <param name="filter"> Filters the results using OData syntax. </param>
         <param name="orderby"> Sorts the results using OData syntax. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List AssetMappings in a received share. </summary>
+        <summary>
+            [Protocol Method] List AssetMappings in a received share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
             List asset mappings for a received share
@@ -814,31 +847,32 @@
           <paramref name="receivedShareName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAssetMappingsAsync with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            await foreach (var data in client.GetAssetMappingsAsync("<receivedShareName>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.ToString());
-            }
-            ]]></code>
-            This sample shows how to call GetAssetMappingsAsync with all parameters, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
-            
-            await foreach (var data in client.GetAssetMappingsAsync("<receivedShareName>", "<skipToken>", "<filter>", "<orderby>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.GetProperty("id").ToString());
-                Console.WriteLine(result.GetProperty("name").ToString());
-                Console.WriteLine(result.GetProperty("type").ToString());
-                Console.WriteLine(result.GetProperty("kind").ToString());
-            }
-            ]]></code></example>
+This sample shows how to call GetAssetMappingsAsync with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+await foreach (var item in client.GetAssetMappingsAsync("<receivedShareName>"))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.ToString());
+}
+]]></code>
+This sample shows how to call GetAssetMappingsAsync with all parameters, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetMappingsClient("<https://my-service.azure.com>", credential);
+
+await foreach (var item in client.GetAssetMappingsAsync("<receivedShareName>", "<skipToken>", "<filter>", "<orderby>", new RequestContext()))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.GetProperty("id").ToString());
+    Console.WriteLine(result.GetProperty("name").ToString());
+    Console.WriteLine(result.GetProperty("type").ToString());
+}
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

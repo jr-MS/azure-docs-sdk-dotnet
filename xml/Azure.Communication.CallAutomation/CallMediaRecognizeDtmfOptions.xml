@@ -87,18 +87,18 @@
       </Docs>
     </Member>
     <Member MemberName="StopTones">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CallAutomation.DtmfTone&gt; StopTones { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;valuetype Azure.Communication.CallAutomation.DtmfTone&gt; StopTones" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Azure.Communication.CallAutomation.DtmfTone&gt; StopTones { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype Azure.Communication.CallAutomation.DtmfTone&gt; StopTones" />
       <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.CallMediaRecognizeDtmfOptions.StopTones" />
-      <MemberSignature Language="VB.NET" Value="Public Property StopTones As IReadOnlyList(Of DtmfTone)" />
-      <MemberSignature Language="F#" Value="member this.StopTones : System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CallAutomation.DtmfTone&gt; with get, set" Usage="Azure.Communication.CallAutomation.CallMediaRecognizeDtmfOptions.StopTones" />
+      <MemberSignature Language="VB.NET" Value="Public Property StopTones As IList(Of DtmfTone)" />
+      <MemberSignature Language="F#" Value="member this.StopTones : System.Collections.Generic.IList&lt;Azure.Communication.CallAutomation.DtmfTone&gt; with get, set" Usage="Azure.Communication.CallAutomation.CallMediaRecognizeDtmfOptions.StopTones" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CallAutomation.DtmfTone&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.IList&lt;Azure.Communication.CallAutomation.DtmfTone&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

@@ -54,7 +54,7 @@
     items:
     - name: Management
       items:
-      - name: Resource Management - API Management
+      - name: Resource Management - Api Management
         href: ~/api/overview/azure/latest/resourcemanager.apimanagement-readme.md
         children:
         - Azure.ResourceManager.ApiManagement
@@ -193,6 +193,11 @@
     href: ~/api/overview/azure/latest/auto-suggest.md
     landingPageType: Service
     items:
+    - name: Auto Suggest
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.AutoSuggest
+      - Microsoft.Azure.CognitiveServices.Search.AutoSuggest.Models
+      landingPageType: Service
     - name: Auto Suggest
       children:
       - Microsoft.Azure.CognitiveServices.Search.AutoSuggest
@@ -461,6 +466,11 @@
       children:
       - Microsoft.Azure.CognitiveServices.Vision.ComputerVision
       - Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models
+      landingPageType: Service
+    - name: Vision Content Moderator
+      children:
+      - Microsoft.Azure.CognitiveServices.ContentModerator
+      - Microsoft.Azure.CognitiveServices.ContentModerator.Models
       landingPageType: Service
     - name: Custom Vision Prediction
       children:
@@ -896,10 +906,20 @@
       - Microsoft.Azure.CognitiveServices.Search.CustomImageSearch
       - Microsoft.Azure.CognitiveServices.Search.CustomImageSearch.Models
       landingPageType: Service
+    - name: Custom Image Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.CustomImageSearch
+      - Microsoft.Azure.CognitiveServices.Search.CustomImageSearch.Models
+      landingPageType: Service
   - name: Custom Search
     href: ~/api/overview/azure/latest/custom-search.md
     landingPageType: Service
     items:
+    - name: Custom Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.CustomSearch
+      - Microsoft.Azure.CognitiveServices.Search.CustomSearch.Models
+      landingPageType: Service
     - name: Custom Search
       children:
       - Microsoft.Azure.CognitiveServices.Search.CustomSearch
@@ -1004,6 +1024,17 @@
         children:
         - Azure.ResourceManager.DesktopVirtualization
         - Azure.ResourceManager.DesktopVirtualization.Models
+  - name: Dev Center
+    href: ~/api/overview/azure/latest/dev-center.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Dev Center
+        href: ~/api/overview/azure/latest/resourcemanager.devcenter-readme.md
+        children:
+        - Azure.ResourceManager.DevCenter
+        - Azure.ResourceManager.DevCenter.Models
   - name: DevTest Labs
     href: ~/api/overview/azure/latest/devtest-labs.md
     landingPageType: Service
@@ -1094,6 +1125,11 @@
       - Microsoft.Azure.CognitiveServices.Search.EntitySearch
       - Microsoft.Azure.CognitiveServices.Search.EntitySearch.Models
       landingPageType: Service
+    - name: Entity Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.EntitySearch
+      - Microsoft.Azure.CognitiveServices.Search.EntitySearch.Models
+      landingPageType: Service
   - name: Event Grid
     href: ~/api/overview/azure/latest/event-grid.md
     landingPageType: Service
@@ -1103,6 +1139,7 @@
       children:
       - Azure.Messaging.EventGrid
       - Azure.Messaging.EventGrid.Models
+      - Azure.Messaging.EventGrid.Namespaces
       - Azure.Messaging.EventGrid.SystemEvents
       - Microsoft.Extensions.Azure
     - name: Event Grid (deprecated)
@@ -1401,6 +1438,11 @@
     href: ~/api/overview/azure/latest/image-search.md
     landingPageType: Service
     items:
+    - name: Image Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.ImageSearch
+      - Microsoft.Azure.CognitiveServices.Search.ImageSearch.Models
+      landingPageType: Service
     - name: Image Search
       children:
       - Microsoft.Azure.CognitiveServices.Search.ImageSearch
@@ -2164,6 +2206,11 @@
     href: ~/api/overview/azure/latest/news-search.md
     landingPageType: Service
     items:
+    - name: News Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.NewsSearch
+      - Microsoft.Azure.CognitiveServices.Search.NewsSearch.Models
+      landingPageType: Service
     - name: News Search
       children:
       - Microsoft.Azure.CognitiveServices.Search.NewsSearch
@@ -3227,10 +3274,20 @@
       - Microsoft.Azure.CognitiveServices.Search.VideoSearch
       - Microsoft.Azure.CognitiveServices.Search.VideoSearch.Models
       landingPageType: Service
+    - name: Video Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.VideoSearch
+      - Microsoft.Azure.CognitiveServices.Search.VideoSearch.Models
+      landingPageType: Service
   - name: Visual Search
     href: ~/api/overview/azure/latest/visual-search.md
     landingPageType: Service
     items:
+    - name: Visual Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.VisualSearch
+      - Microsoft.Azure.CognitiveServices.Search.VisualSearch.Models
+      landingPageType: Service
     - name: Visual Search
       children:
       - Microsoft.Azure.CognitiveServices.Search.VisualSearch
@@ -3267,6 +3324,11 @@
     href: ~/api/overview/azure/latest/web-search.md
     landingPageType: Service
     items:
+    - name: Web Search
+      children:
+      - Microsoft.Azure.CognitiveServices.Search.WebSearch
+      - Microsoft.Azure.CognitiveServices.Search.WebSearch.Models
+      landingPageType: Service
     - name: Web Search
       children:
       - Microsoft.Azure.CognitiveServices.Search.WebSearch

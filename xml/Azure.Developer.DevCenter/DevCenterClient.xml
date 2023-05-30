@@ -106,7 +106,11 @@
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists Dev Boxes that the caller has access to in the DevCenter. </summary>
+        <summary>
+            [Protocol Method] Lists Dev Boxes that the caller has access to in the DevCenter.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -159,9 +163,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-foreach (var data in client.GetAllDevBoxes())
+foreach (var item in client.GetAllDevBoxes())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("poolName").ToString());
 }
 ]]></code>
@@ -171,9 +175,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-foreach (var data in client.GetAllDevBoxes("<filter>", 1234))
+foreach (var item in client.GetAllDevBoxes("<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("projectName").ToString());
     Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -225,7 +229,11 @@ foreach (var data in client.GetAllDevBoxes("<filter>", 1234))
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists Dev Boxes that the caller has access to in the DevCenter. </summary>
+        <summary>
+            [Protocol Method] Lists Dev Boxes that the caller has access to in the DevCenter.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -278,9 +286,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-await foreach (var data in client.GetAllDevBoxesAsync())
+await foreach (var item in client.GetAllDevBoxesAsync())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("poolName").ToString());
 }
 ]]></code>
@@ -290,9 +298,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-await foreach (var data in client.GetAllDevBoxesAsync("<filter>", 1234))
+await foreach (var item in client.GetAllDevBoxesAsync("<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("projectName").ToString());
     Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -346,7 +354,11 @@ await foreach (var data in client.GetAllDevBoxesAsync("<filter>", 1234))
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists Dev Boxes in the Dev Center for a particular user. </summary>
+        <summary>
+            [Protocol Method] Lists Dev Boxes in the Dev Center for a particular user.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -403,9 +415,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-foreach (var data in client.GetAllDevBoxesByUser())
+foreach (var item in client.GetAllDevBoxesByUser())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("poolName").ToString());
 }
 ]]></code>
@@ -415,9 +427,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-foreach (var data in client.GetAllDevBoxesByUser(<me>, "<filter>", 1234))
+foreach (var item in client.GetAllDevBoxesByUser("me", "<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("projectName").ToString());
     Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -471,7 +483,11 @@ foreach (var data in client.GetAllDevBoxesByUser(<me>, "<filter>", 1234))
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists Dev Boxes in the Dev Center for a particular user. </summary>
+        <summary>
+            [Protocol Method] Lists Dev Boxes in the Dev Center for a particular user.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -528,9 +544,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-await foreach (var data in client.GetAllDevBoxesByUserAsync())
+await foreach (var item in client.GetAllDevBoxesByUserAsync())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("poolName").ToString());
 }
 ]]></code>
@@ -540,9 +556,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-await foreach (var data in client.GetAllDevBoxesByUserAsync(<me>, "<filter>", 1234))
+await foreach (var item in client.GetAllDevBoxesByUserAsync("me", "<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("projectName").ToString());
     Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -592,8 +608,12 @@ await foreach (var data in client.GetAllDevBoxesByUserAsync(<me>, "<filter>", 12
       <Docs>
         <param name="projectName"> The DevCenter Project upon which to execute operations. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a project. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a project.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -617,7 +637,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-Response response = client.GetProject("<projectName>");
+Response response = client.GetProject("<projectName>", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -646,8 +666,12 @@ Console.WriteLine(result.GetProperty("description").ToString());
       <Docs>
         <param name="projectName"> The DevCenter Project upon which to execute operations. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a project. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a project.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -671,7 +695,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-Response response = await client.GetProjectAsync("<projectName>");
+Response response = await client.GetProjectAsync("<projectName>", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -702,7 +726,11 @@ Console.WriteLine(result.GetProperty("description").ToString());
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists all projects. </summary>
+        <summary>
+            [Protocol Method] Lists all projects.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -723,9 +751,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-foreach (var data in client.GetProjects())
+foreach (var item in client.GetProjects())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -735,9 +763,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-foreach (var data in client.GetProjects("<filter>", 1234))
+foreach (var item in client.GetProjects("<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("description").ToString());
 }
@@ -767,7 +795,11 @@ foreach (var data in client.GetProjects("<filter>", 1234))
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists all projects. </summary>
+        <summary>
+            [Protocol Method] Lists all projects.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -788,9 +820,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-await foreach (var data in client.GetProjectsAsync())
+await foreach (var item in client.GetProjectsAsync())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -800,9 +832,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevCenterClient(endpoint, credential);
 
-await foreach (var data in client.GetProjectsAsync("<filter>", 1234))
+await foreach (var item in client.GetProjectsAsync("<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("description").ToString());
 }

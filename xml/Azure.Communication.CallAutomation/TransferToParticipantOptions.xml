@@ -20,21 +20,71 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TransferToParticipantOptions (Azure.Communication.CommunicationIdentifier targetParticipant);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Communication.CommunicationIdentifier targetParticipant) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.TransferToParticipantOptions.#ctor(Azure.Communication.CommunicationIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (targetParticipant As CommunicationIdentifier)" />
-      <MemberSignature Language="F#" Value="new Azure.Communication.CallAutomation.TransferToParticipantOptions : Azure.Communication.CommunicationIdentifier -&gt; Azure.Communication.CallAutomation.TransferToParticipantOptions" Usage="new Azure.Communication.CallAutomation.TransferToParticipantOptions targetParticipant" />
+      <MemberSignature Language="C#" Value="public TransferToParticipantOptions (Azure.Communication.CommunicationUserIdentifier targetIdentity, System.Collections.Generic.IDictionary&lt;string,string&gt; voipHeaders = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Communication.CommunicationUserIdentifier targetIdentity, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; voipHeaders) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.TransferToParticipantOptions.#ctor(Azure.Communication.CommunicationUserIdentifier,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetIdentity As CommunicationUserIdentifier, Optional voipHeaders As IDictionary(Of String, String) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallAutomation.TransferToParticipantOptions : Azure.Communication.CommunicationUserIdentifier * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.Communication.CallAutomation.TransferToParticipantOptions" Usage="new Azure.Communication.CallAutomation.TransferToParticipantOptions (targetIdentity, voipHeaders)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="targetParticipant" Type="Azure.Communication.CommunicationIdentifier" />
+        <Parameter Name="targetIdentity" Type="Azure.Communication.CommunicationUserIdentifier" />
+        <Parameter Name="voipHeaders" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="targetParticipant" />
+        <param name="targetIdentity"> The target to transfer the call to. </param>
+        <param name="voipHeaders"> Custom Context Voip headers. </param>
+        <summary>
+            Creates a new TransferToParticipantOptions object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransferToParticipantOptions (Azure.Communication.MicrosoftTeamsUserIdentifier targetIdentity, System.Collections.Generic.IDictionary&lt;string,string&gt; voipHeaders = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Communication.MicrosoftTeamsUserIdentifier targetIdentity, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; voipHeaders) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.TransferToParticipantOptions.#ctor(Azure.Communication.MicrosoftTeamsUserIdentifier,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetIdentity As MicrosoftTeamsUserIdentifier, Optional voipHeaders As IDictionary(Of String, String) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallAutomation.TransferToParticipantOptions : Azure.Communication.MicrosoftTeamsUserIdentifier * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.Communication.CallAutomation.TransferToParticipantOptions" Usage="new Azure.Communication.CallAutomation.TransferToParticipantOptions (targetIdentity, voipHeaders)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetIdentity" Type="Azure.Communication.MicrosoftTeamsUserIdentifier" />
+        <Parameter Name="voipHeaders" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="targetIdentity"> The target to transfer the call to. </param>
+        <param name="voipHeaders"> Custom Context Voip headers. </param>
+        <summary>
+            Creates a new TransferToParticipantOptions object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransferToParticipantOptions (Azure.Communication.PhoneNumberIdentifier targetPhoneNumberIdentity, System.Collections.Generic.IDictionary&lt;string,string&gt; sipHeaders = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Communication.PhoneNumberIdentifier targetPhoneNumberIdentity, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; sipHeaders) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.TransferToParticipantOptions.#ctor(Azure.Communication.PhoneNumberIdentifier,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetPhoneNumberIdentity As PhoneNumberIdentifier, Optional sipHeaders As IDictionary(Of String, String) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallAutomation.TransferToParticipantOptions : Azure.Communication.PhoneNumberIdentifier * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Azure.Communication.CallAutomation.TransferToParticipantOptions" Usage="new Azure.Communication.CallAutomation.TransferToParticipantOptions (targetPhoneNumberIdentity, sipHeaders)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetPhoneNumberIdentity" Type="Azure.Communication.PhoneNumberIdentifier" />
+        <Parameter Name="sipHeaders" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="targetPhoneNumberIdentity"> The target to transfer the call to. </param>
+        <param name="sipHeaders"> Custom Context Sip headers. </param>
         <summary>
             Creates a new TransferToParticipantOptions object.
             </summary>
@@ -63,56 +113,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RepeatabilityHeaders">
-      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.RepeatabilityHeaders RepeatabilityHeaders { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallAutomation.RepeatabilityHeaders RepeatabilityHeaders" />
-      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.TransferToParticipantOptions.RepeatabilityHeaders" />
-      <MemberSignature Language="VB.NET" Value="Public Property RepeatabilityHeaders As RepeatabilityHeaders" />
-      <MemberSignature Language="F#" Value="member this.RepeatabilityHeaders : Azure.Communication.CallAutomation.RepeatabilityHeaders with get, set" Usage="Azure.Communication.CallAutomation.TransferToParticipantOptions.RepeatabilityHeaders" />
+    <Member MemberName="SipHeaders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; SipHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; SipHeaders" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.TransferToParticipantOptions.SipHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SipHeaders As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.SipHeaders : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Azure.Communication.CallAutomation.TransferToParticipantOptions.SipHeaders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Communication.CallAutomation.RepeatabilityHeaders</ReturnType>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Repeatability Headers.
-            </summary>
+        <summary> Dictionary of SIP headers. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SourceCallerId">
-      <MemberSignature Language="C#" Value="public Azure.Communication.PhoneNumberIdentifier SourceCallerId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.PhoneNumberIdentifier SourceCallerId" />
-      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.TransferToParticipantOptions.SourceCallerId" />
-      <MemberSignature Language="VB.NET" Value="Public Property SourceCallerId As PhoneNumberIdentifier" />
-      <MemberSignature Language="F#" Value="member this.SourceCallerId : Azure.Communication.PhoneNumberIdentifier with get, set" Usage="Azure.Communication.CallAutomation.TransferToParticipantOptions.SourceCallerId" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Communication.PhoneNumberIdentifier</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            The caller id of the source.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TargetParticipant">
-      <MemberSignature Language="C#" Value="public Azure.Communication.CommunicationIdentifier TargetParticipant { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CommunicationIdentifier TargetParticipant" />
-      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.TransferToParticipantOptions.TargetParticipant" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetParticipant As CommunicationIdentifier" />
-      <MemberSignature Language="F#" Value="member this.TargetParticipant : Azure.Communication.CommunicationIdentifier" Usage="Azure.Communication.CallAutomation.TransferToParticipantOptions.TargetParticipant" />
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CommunicationIdentifier Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CommunicationIdentifier Target" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.TransferToParticipantOptions.Target" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As CommunicationIdentifier" />
+      <MemberSignature Language="F#" Value="member this.Target : Azure.Communication.CommunicationIdentifier" Usage="Azure.Communication.CallAutomation.TransferToParticipantOptions.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -123,8 +149,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The target participant to transfer the call to.
+            The target callee.
             </summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VoipHeaders">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; VoipHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; VoipHeaders" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.TransferToParticipantOptions.VoipHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VoipHeaders As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.VoipHeaders : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Azure.Communication.CallAutomation.TransferToParticipantOptions.VoipHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Dictionary of VOIP headers. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

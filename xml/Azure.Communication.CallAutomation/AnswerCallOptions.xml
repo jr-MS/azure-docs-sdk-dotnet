@@ -43,6 +43,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AnsweredByIdentifier">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CommunicationUserIdentifier AnsweredByIdentifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CommunicationUserIdentifier AnsweredByIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.AnswerCallOptions.AnsweredByIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnsweredByIdentifier As CommunicationUserIdentifier" />
+      <MemberSignature Language="F#" Value="member this.AnsweredByIdentifier : Azure.Communication.CommunicationUserIdentifier with get, set" Usage="Azure.Communication.CallAutomation.AnswerCallOptions.AnsweredByIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CommunicationUserIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The identifier of the call automation entity which answers the call.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureCognitiveServicesEndpointUrl">
+      <MemberSignature Language="C#" Value="public Uri AzureCognitiveServicesEndpointUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AzureCognitiveServicesEndpointUrl" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.AnswerCallOptions.AzureCognitiveServicesEndpointUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureCognitiveServicesEndpointUrl As Uri" />
+      <MemberSignature Language="F#" Value="member this.AzureCognitiveServicesEndpointUrl : Uri with get, set" Usage="Azure.Communication.CallAutomation.AnswerCallOptions.AzureCognitiveServicesEndpointUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The endpoint URL of the Azure Cognitive Services resource attached
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CallbackUri">
       <MemberSignature Language="C#" Value="public Uri CallbackUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri CallbackUri" />
@@ -87,23 +131,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RepeatabilityHeaders">
-      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.RepeatabilityHeaders RepeatabilityHeaders { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallAutomation.RepeatabilityHeaders RepeatabilityHeaders" />
-      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.AnswerCallOptions.RepeatabilityHeaders" />
-      <MemberSignature Language="VB.NET" Value="Public Property RepeatabilityHeaders As RepeatabilityHeaders" />
-      <MemberSignature Language="F#" Value="member this.RepeatabilityHeaders : Azure.Communication.CallAutomation.RepeatabilityHeaders with get, set" Usage="Azure.Communication.CallAutomation.AnswerCallOptions.RepeatabilityHeaders" />
+    <Member MemberName="MediaStreamingOptions">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.MediaStreamingOptions MediaStreamingOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallAutomation.MediaStreamingOptions MediaStreamingOptions" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.AnswerCallOptions.MediaStreamingOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaStreamingOptions As MediaStreamingOptions" />
+      <MemberSignature Language="F#" Value="member this.MediaStreamingOptions : Azure.Communication.CallAutomation.MediaStreamingOptions with get, set" Usage="Azure.Communication.CallAutomation.AnswerCallOptions.MediaStreamingOptions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Azure.Communication.CallAutomation.RepeatabilityHeaders</ReturnType>
+        <ReturnType>Azure.Communication.CallAutomation.MediaStreamingOptions</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Repeatability Headers.
+            Media Streaming Configuration.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationContext">
+      <MemberSignature Language="C#" Value="public string OperationContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OperationContext" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.AnswerCallOptions.OperationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationContext As String" />
+      <MemberSignature Language="F#" Value="member this.OperationContext : string with get, set" Usage="Azure.Communication.CallAutomation.AnswerCallOptions.OperationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The operation context.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

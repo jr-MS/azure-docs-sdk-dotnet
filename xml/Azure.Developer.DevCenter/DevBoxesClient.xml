@@ -116,11 +116,15 @@
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="devBoxName"> The name of a Dev Box. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Creates or updates a Dev Box. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Creates or updates a Dev Box.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Below is the JSON schema for the request and response payloads.
 
@@ -223,8 +227,8 @@ var data = new {
 
 var operation = client.CreateDevBox(WaitUntil.Completed, "<devBoxName>", RequestContent.Create(data));
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("poolName").ToString());
 ]]></code>
 This sample shows how to call CreateDevBox with all parameters and request content, and how to parse the result.
@@ -238,10 +242,10 @@ var data = new {
     localAdministrator = "Enabled",
 };
 
-var operation = client.CreateDevBox(WaitUntil.Completed, "<devBoxName>", RequestContent.Create(data), <me>);
+var operation = client.CreateDevBox(WaitUntil.Completed, "<devBoxName>", RequestContent.Create(data), "me", new RequestContext());
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
 Console.WriteLine(result.GetProperty("projectName").ToString());
 Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -294,11 +298,15 @@ Console.WriteLine(result.GetProperty("localAdministrator").ToString());
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="devBoxName"> The name of a Dev Box. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Creates or updates a Dev Box. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Creates or updates a Dev Box.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Below is the JSON schema for the request and response payloads.
 
@@ -401,8 +409,8 @@ var data = new {
 
 var operation = await client.CreateDevBoxAsync(WaitUntil.Completed, "<devBoxName>", RequestContent.Create(data));
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("poolName").ToString());
 ]]></code>
 This sample shows how to call CreateDevBoxAsync with all parameters and request content, and how to parse the result.
@@ -416,10 +424,10 @@ var data = new {
     localAdministrator = "Enabled",
 };
 
-var operation = await client.CreateDevBoxAsync(WaitUntil.Completed, "<devBoxName>", RequestContent.Create(data), <me>);
+var operation = await client.CreateDevBoxAsync(WaitUntil.Completed, "<devBoxName>", RequestContent.Create(data), "me", new RequestContext());
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
 Console.WriteLine(result.GetProperty("projectName").ToString());
 Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -474,8 +482,12 @@ Console.WriteLine(result.GetProperty("localAdministrator").ToString());
         <param name="delayUntil"> The delayed action time (UTC). </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delays an Upcoming Action. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Delays an Upcoming Action.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -514,7 +526,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = client.DelayUpcomingAction("<devBoxName>", "<upcomingActionId>", DateTimeOffset.UtcNow, <me>);
+Response response = client.DelayUpcomingAction("<devBoxName>", "<upcomingActionId>", DateTimeOffset.UtcNow, "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("id").ToString());
@@ -553,8 +565,12 @@ Console.WriteLine(result.GetProperty("sourceId").ToString());
         <param name="delayUntil"> The delayed action time (UTC). </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delays an Upcoming Action. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Delays an Upcoming Action.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -593,7 +609,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = await client.DelayUpcomingActionAsync("<devBoxName>", "<upcomingActionId>", DateTimeOffset.UtcNow, <me>);
+Response response = await client.DelayUpcomingActionAsync("<devBoxName>", "<upcomingActionId>", DateTimeOffset.UtcNow, "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("id").ToString());
@@ -631,7 +647,11 @@ Console.WriteLine(result.GetProperty("sourceId").ToString());
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Deletes a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Deletes a Dev Box.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
@@ -689,7 +709,7 @@ var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
 var operation = client.DeleteDevBox(WaitUntil.Completed, "<devBoxName>");
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code>
 This sample shows how to call DeleteDevBox with all parameters.
 <code><![CDATA[
@@ -697,9 +717,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-var operation = client.DeleteDevBox(WaitUntil.Completed, "<devBoxName>", <me>);
+var operation = client.DeleteDevBox(WaitUntil.Completed, "<devBoxName>", "me", new RequestContext());
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code></example>
       </Docs>
     </Member>
@@ -729,7 +749,11 @@ Console.WriteLine(operation.GetRawResponse().Status)
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Deletes a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Deletes a Dev Box.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
@@ -787,7 +811,7 @@ var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
 var operation = await client.DeleteDevBoxAsync(WaitUntil.Completed, "<devBoxName>");
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code>
 This sample shows how to call DeleteDevBoxAsync with all parameters.
 <code><![CDATA[
@@ -795,9 +819,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-var operation = await client.DeleteDevBoxAsync(WaitUntil.Completed, "<devBoxName>", <me>);
+var operation = await client.DeleteDevBoxAsync(WaitUntil.Completed, "<devBoxName>", "me", new RequestContext());
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code></example>
       </Docs>
     </Member>
@@ -824,8 +848,12 @@ Console.WriteLine(operation.GetRawResponse().Status)
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a Dev Box. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a Dev Box
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -892,7 +920,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = client.GetDevBoxByUser("<devBoxName>", <me>);
+Response response = client.GetDevBoxByUser("<devBoxName>", "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -945,8 +973,12 @@ Console.WriteLine(result.GetProperty("localAdministrator").ToString());
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a Dev Box. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a Dev Box
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1013,7 +1045,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = await client.GetDevBoxByUserAsync("<devBoxName>", <me>);
+Response response = await client.GetDevBoxByUserAsync("<devBoxName>", "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -1068,7 +1100,11 @@ Console.WriteLine(result.GetProperty("localAdministrator").ToString());
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists Dev Boxes in the project for a particular user. </summary>
+        <summary>
+            [Protocol Method] Lists Dev Boxes in the project for a particular user.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1125,9 +1161,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetDevBoxesByUser())
+foreach (var item in client.GetDevBoxesByUser())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("poolName").ToString());
 }
 ]]></code>
@@ -1137,9 +1173,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetDevBoxesByUser(<me>, "<filter>", 1234))
+foreach (var item in client.GetDevBoxesByUser("me", "<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("projectName").ToString());
     Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -1193,7 +1229,11 @@ foreach (var data in client.GetDevBoxesByUser(<me>, "<filter>", 1234))
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists Dev Boxes in the project for a particular user. </summary>
+        <summary>
+            [Protocol Method] Lists Dev Boxes in the project for a particular user.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1250,9 +1290,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetDevBoxesByUserAsync())
+await foreach (var item in client.GetDevBoxesByUserAsync())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("poolName").ToString());
 }
 ]]></code>
@@ -1262,9 +1302,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetDevBoxesByUserAsync(<me>, "<filter>", 1234))
+await foreach (var item in client.GetDevBoxesByUserAsync("me", "<filter>", 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("projectName").ToString());
     Console.WriteLine(result.GetProperty("poolName").ToString());
@@ -1314,8 +1354,12 @@ await foreach (var data in client.GetDevBoxesByUserAsync(<me>, "<filter>", 1234)
       <Docs>
         <param name="poolName"> The name of a pool of Dev Boxes. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a pool. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a pool
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1359,7 +1403,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = client.GetPool("<poolName>");
+Response response = client.GetPool("<poolName>", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -1400,8 +1444,12 @@ Console.WriteLine(result.GetProperty("localAdministrator").ToString());
       <Docs>
         <param name="poolName"> The name of a pool of Dev Boxes. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a pool. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a pool
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1445,7 +1493,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = await client.GetPoolAsync("<poolName>");
+Response response = await client.GetPoolAsync("<poolName>", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -1488,7 +1536,11 @@ Console.WriteLine(result.GetProperty("localAdministrator").ToString());
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists available pools. </summary>
+        <summary>
+            [Protocol Method] Lists available pools
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1529,9 +1581,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetPools())
+foreach (var item in client.GetPools())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -1541,9 +1593,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetPools(1234, "<filter>"))
+foreach (var item in client.GetPools(1234, "<filter>", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("location").ToString());
     Console.WriteLine(result.GetProperty("osType").ToString());
@@ -1585,7 +1637,11 @@ foreach (var data in client.GetPools(1234, "<filter>"))
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists available pools. </summary>
+        <summary>
+            [Protocol Method] Lists available pools
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1626,9 +1682,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetPoolsAsync())
+await foreach (var item in client.GetPoolsAsync())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -1638,9 +1694,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetPoolsAsync(1234, "<filter>"))
+await foreach (var item in client.GetPoolsAsync(1234, "<filter>", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("location").ToString());
     Console.WriteLine(result.GetProperty("osType").ToString());
@@ -1682,8 +1738,12 @@ await foreach (var data in client.GetPoolsAsync(1234, "<filter>"))
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets RDP Connection info. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets RDP Connection info
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1718,7 +1778,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = client.GetRemoteConnection("<devBoxName>", <me>);
+Response response = client.GetRemoteConnection("<devBoxName>", "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("webUrl").ToString());
@@ -1749,8 +1809,12 @@ Console.WriteLine(result.GetProperty("rdpConnectionUrl").ToString());
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets RDP Connection info. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets RDP Connection info
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1785,7 +1849,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = await client.GetRemoteConnectionAsync("<devBoxName>", <me>);
+Response response = await client.GetRemoteConnectionAsync("<devBoxName>", "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("webUrl").ToString());
@@ -1816,8 +1880,12 @@ Console.WriteLine(result.GetProperty("rdpConnectionUrl").ToString());
         <param name="poolName"> The name of a pool of Dev Boxes. </param>
         <param name="scheduleName"> The name of a schedule. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a schedule. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a schedule.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1844,7 +1912,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = client.GetScheduleByPool("<poolName>", "<scheduleName>");
+Response response = client.GetScheduleByPool("<poolName>", "<scheduleName>", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -1878,8 +1946,12 @@ Console.WriteLine(result.GetProperty("timeZone").ToString());
         <param name="poolName"> The name of a pool of Dev Boxes. </param>
         <param name="scheduleName"> The name of a schedule. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets a schedule. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets a schedule.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1906,7 +1978,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = await client.GetScheduleByPoolAsync("<poolName>", "<scheduleName>");
+Response response = await client.GetScheduleByPoolAsync("<poolName>", "<scheduleName>", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("name").ToString());
@@ -1942,7 +2014,11 @@ Console.WriteLine(result.GetProperty("timeZone").ToString());
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists available schedules for a pool. </summary>
+        <summary>
+            [Protocol Method] Lists available schedules for a pool.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1970,9 +2046,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetSchedulesByPool("<poolName>"))
+foreach (var item in client.GetSchedulesByPool("<poolName>"))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -1982,9 +2058,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetSchedulesByPool("<poolName>", 1234, "<filter>"))
+foreach (var item in client.GetSchedulesByPool("<poolName>", 1234, "<filter>", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("frequency").ToString());
@@ -2019,7 +2095,11 @@ foreach (var data in client.GetSchedulesByPool("<poolName>", 1234, "<filter>"))
         <param name="maxCount"> The maximum number of resources to return from the operation. Example: 'top=10'. </param>
         <param name="filter"> An OData filter clause to apply to the operation. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists available schedules for a pool. </summary>
+        <summary>
+            [Protocol Method] Lists available schedules for a pool.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -2047,9 +2127,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetSchedulesByPoolAsync("<poolName>"))
+await foreach (var item in client.GetSchedulesByPoolAsync("<poolName>"))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -2059,9 +2139,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetSchedulesByPoolAsync("<poolName>", 1234, "<filter>"))
+await foreach (var item in client.GetSchedulesByPoolAsync("<poolName>", 1234, "<filter>", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("name").ToString());
     Console.WriteLine(result.GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("frequency").ToString());
@@ -2096,8 +2176,12 @@ await foreach (var data in client.GetSchedulesByPoolAsync("<poolName>", 1234, "<
         <param name="upcomingActionId"> The upcoming action id. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets an Upcoming Action. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets an Upcoming Action.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -2136,7 +2220,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = client.GetUpcomingAction("<devBoxName>", "<upcomingActionId>", <me>);
+Response response = client.GetUpcomingAction("<devBoxName>", "<upcomingActionId>", "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("id").ToString());
@@ -2173,8 +2257,12 @@ Console.WriteLine(result.GetProperty("sourceId").ToString());
         <param name="upcomingActionId"> The upcoming action id. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Gets an Upcoming Action. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Gets an Upcoming Action.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -2213,7 +2301,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = await client.GetUpcomingActionAsync("<devBoxName>", "<upcomingActionId>", <me>);
+Response response = await client.GetUpcomingActionAsync("<devBoxName>", "<upcomingActionId>", "me", new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("id").ToString());
@@ -2248,7 +2336,11 @@ Console.WriteLine(result.GetProperty("sourceId").ToString());
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists upcoming actions on a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Lists upcoming actions on a Dev Box.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -2277,9 +2369,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetUpcomingActions("<devBoxName>"))
+foreach (var item in client.GetUpcomingActions("<devBoxName>"))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -2289,9 +2381,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-foreach (var data in client.GetUpcomingActions("<devBoxName>", <me>))
+foreach (var item in client.GetUpcomingActions("<devBoxName>", "me", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("actionType").ToString());
     Console.WriteLine(result.GetProperty("reason").ToString());
@@ -2325,7 +2417,11 @@ foreach (var data in client.GetUpcomingActions("<devBoxName>", <me>))
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Lists upcoming actions on a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Lists upcoming actions on a Dev Box.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -2354,9 +2450,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetUpcomingActionsAsync("<devBoxName>"))
+await foreach (var item in client.GetUpcomingActionsAsync("<devBoxName>"))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.ToString());
 }
 ]]></code>
@@ -2366,9 +2462,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-await foreach (var data in client.GetUpcomingActionsAsync("<devBoxName>", <me>))
+await foreach (var item in client.GetUpcomingActionsAsync("<devBoxName>", "me", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("actionType").ToString());
     Console.WriteLine(result.GetProperty("reason").ToString());
@@ -2424,7 +2520,11 @@ await foreach (var data in client.GetUpcomingActionsAsync("<devBoxName>", <me>))
         <param name="upcomingActionId"> The upcoming action id. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Skips an Upcoming Action. </summary>
+        <summary>
+            [Protocol Method] Skips an Upcoming Action.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2448,7 +2548,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = client.SkipUpcomingAction("<devBoxName>", "<upcomingActionId>", <me>);
+Response response = client.SkipUpcomingAction("<devBoxName>", "<upcomingActionId>", "me", new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -2478,7 +2578,11 @@ Console.WriteLine(response.Status);
         <param name="upcomingActionId"> The upcoming action id. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Skips an Upcoming Action. </summary>
+        <summary>
+            [Protocol Method] Skips an Upcoming Action.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2502,7 +2606,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-Response response = await client.SkipUpcomingActionAsync("<devBoxName>", "<upcomingActionId>", <me>);
+Response response = await client.SkipUpcomingActionAsync("<devBoxName>", "<upcomingActionId>", "me", new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -2533,7 +2637,11 @@ Console.WriteLine(response.Status);
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Starts a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Starts a Dev Box
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
@@ -2591,7 +2699,7 @@ var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
 var operation = client.StartDevBox(WaitUntil.Completed, "<devBoxName>");
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code>
 This sample shows how to call StartDevBox with all parameters.
 <code><![CDATA[
@@ -2599,9 +2707,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-var operation = client.StartDevBox(WaitUntil.Completed, "<devBoxName>", <me>);
+var operation = client.StartDevBox(WaitUntil.Completed, "<devBoxName>", "me", new RequestContext());
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code></example>
       </Docs>
     </Member>
@@ -2631,7 +2739,11 @@ Console.WriteLine(operation.GetRawResponse().Status)
         <param name="devBoxName"> The name of a Dev Box. </param>
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Starts a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Starts a Dev Box
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
@@ -2689,7 +2801,7 @@ var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
 var operation = await client.StartDevBoxAsync(WaitUntil.Completed, "<devBoxName>");
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code>
 This sample shows how to call StartDevBoxAsync with all parameters.
 <code><![CDATA[
@@ -2697,9 +2809,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-var operation = await client.StartDevBoxAsync(WaitUntil.Completed, "<devBoxName>", <me>);
+var operation = await client.StartDevBoxAsync(WaitUntil.Completed, "<devBoxName>", "me", new RequestContext());
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code></example>
       </Docs>
     </Member>
@@ -2731,7 +2843,11 @@ Console.WriteLine(operation.GetRawResponse().Status)
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="hibernate"> Optional parameter to hibernate the dev box. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Stops a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Stops a Dev Box
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2748,7 +2864,7 @@ var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
 var operation = client.StopDevBox(WaitUntil.Completed, "<devBoxName>");
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code>
 This sample shows how to call StopDevBox with all parameters.
 <code><![CDATA[
@@ -2756,9 +2872,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-var operation = client.StopDevBox(WaitUntil.Completed, "<devBoxName>", <me>, true);
+var operation = client.StopDevBox(WaitUntil.Completed, "<devBoxName>", "me", true, new RequestContext());
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code></example>
       </Docs>
     </Member>
@@ -2790,7 +2906,11 @@ Console.WriteLine(operation.GetRawResponse().Status)
         <param name="userId"> The AAD object id of the user. If value is 'me', the identity is taken from the authentication context. </param>
         <param name="hibernate"> Optional parameter to hibernate the dev box. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Stops a Dev Box. </summary>
+        <summary>
+            [Protocol Method] Stops a Dev Box
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -2807,7 +2927,7 @@ var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
 var operation = await client.StopDevBoxAsync(WaitUntil.Completed, "<devBoxName>");
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code>
 This sample shows how to call StopDevBoxAsync with all parameters.
 <code><![CDATA[
@@ -2815,9 +2935,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new DevBoxesClient(endpoint, "<projectName>", credential);
 
-var operation = await client.StopDevBoxAsync(WaitUntil.Completed, "<devBoxName>", <me>, true);
+var operation = await client.StopDevBoxAsync(WaitUntil.Completed, "<devBoxName>", "me", true, new RequestContext());
 
-Console.WriteLine(operation.GetRawResponse().Status)
+Console.WriteLine(operation.GetRawResponse().Status);
 ]]></code></example>
       </Docs>
     </Member>

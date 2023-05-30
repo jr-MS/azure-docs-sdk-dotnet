@@ -1,0 +1,77 @@
+<Type Name="RouterWorkerState" FullName="Azure.Communication.JobRouter.RouterWorkerState">
+  <TypeSignature Language="C#" Value="public enum RouterWorkerState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RouterWorkerState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Azure.Communication.JobRouter.RouterWorkerState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RouterWorkerState" />
+  <TypeSignature Language="F#" Value="type RouterWorkerState = " />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Communication.JobRouter</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary> The current state of the worker. </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Communication.JobRouter.RouterWorkerState Active = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Communication.JobRouter.RouterWorkerState.Active" />
+      <MemberSignature Language="VB.NET" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 0" Usage="Azure.Communication.JobRouter.RouterWorkerState.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.JobRouter</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.JobRouter.RouterWorkerState</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary> active. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Draining">
+      <MemberSignature Language="C#" Value="Draining" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Communication.JobRouter.RouterWorkerState Draining = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Communication.JobRouter.RouterWorkerState.Draining" />
+      <MemberSignature Language="VB.NET" Value="Draining" />
+      <MemberSignature Language="F#" Value="Draining = 1" Usage="Azure.Communication.JobRouter.RouterWorkerState.Draining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.JobRouter</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.JobRouter.RouterWorkerState</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary> draining. </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inactive">
+      <MemberSignature Language="C#" Value="Inactive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Azure.Communication.JobRouter.RouterWorkerState Inactive = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Azure.Communication.JobRouter.RouterWorkerState.Inactive" />
+      <MemberSignature Language="VB.NET" Value="Inactive" />
+      <MemberSignature Language="F#" Value="Inactive = 2" Usage="Azure.Communication.JobRouter.RouterWorkerState.Inactive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.JobRouter</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.JobRouter.RouterWorkerState</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary> inactive. </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

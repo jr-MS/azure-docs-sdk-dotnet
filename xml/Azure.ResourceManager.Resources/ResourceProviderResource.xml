@@ -18,6 +18,7 @@
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
+    <AssemblyVersion>1.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Azure.ResourceManager.ArmResource</BaseTypeName>
@@ -48,6 +49,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -76,6 +78,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceIdentifier</ReturnType>
@@ -113,6 +116,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.ResourceProviderData</ReturnType>
@@ -145,6 +149,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;</ReturnType>
@@ -184,6 +189,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt;</ReturnType>
@@ -223,6 +229,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.FeatureResource&gt;</ReturnType>
@@ -266,6 +273,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.FeatureResource&gt;&gt;</ReturnType>
@@ -309,6 +317,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.FeatureCollection</ReturnType>
@@ -341,6 +350,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.ProviderResourceType&gt;</ReturnType>
@@ -380,6 +390,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.ProviderResourceType&gt;</ReturnType>
@@ -419,6 +430,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -450,6 +462,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.ProviderPermission&gt;</ReturnType>
@@ -487,6 +500,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.ProviderPermission&gt;</ReturnType>
@@ -524,13 +538,14 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="Azure.ResourceManager.Resources.Models.ProviderRegistrationContent" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Resources.Models.ProviderRegistrationContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="content"> The third party consent for S2S. </param>
@@ -538,36 +553,6 @@
         <summary>
             Registers a subscription with a resource provider.
             <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/register</description></item><item><term>Operation Id</term><description>Providers_Register</description></item></list></summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Register">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt; Register (Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.ResourceManager.Resources.ResourceProviderResource&gt; Register(class Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceProviderResource.Register(Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function Register (Optional options As ResourceProviderRegistrationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Response(Of ResourceProviderResource)" />
-      <MemberSignature Language="F#" Value="abstract member Register : Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&#xA;override this.Register : Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;" Usage="resourceProviderResource.Register (options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="options" Type="Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="options"> The third party consent for S2S. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Registers a subscription with a resource provider.
-            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/register
-            Operation Id: Providers_Register
-            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -593,13 +578,14 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="Azure.ResourceManager.Resources.Models.ProviderRegistrationContent" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="content" Type="Azure.ResourceManager.Resources.Models.ProviderRegistrationContent" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="content"> The third party consent for S2S. </param>
@@ -607,36 +593,6 @@
         <summary>
             Registers a subscription with a resource provider.
             <list type="bullet"><item><term>Request Path</term><description>/subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/register</description></item><item><term>Operation Id</term><description>Providers_Register</description></item></list></summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RegisterAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt; RegisterAsync (Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions options = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt; RegisterAsync(class Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.Resources.ResourceProviderResource.RegisterAsync(Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RegisterAsync (Optional options As ResourceProviderRegistrationOptions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of ResourceProviderResource))" />
-      <MemberSignature Language="F#" Value="abstract member RegisterAsync : Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt;&#xA;override this.RegisterAsync : Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt;" Usage="resourceProviderResource.RegisterAsync (options, cancellationToken)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="options" Type="Azure.ResourceManager.Resources.Models.ResourceProviderRegistrationOptions" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="options"> The third party consent for S2S. </param>
-        <param name="cancellationToken"> The cancellation token to use. </param>
-        <summary>
-            Registers a subscription with a resource provider.
-            Request Path: /subscriptions/{subscriptionId}/providers/{resourceProviderNamespace}/register
-            Operation Id: Providers_Register
-            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -662,6 +618,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Core.ResourceType</ReturnType>
@@ -692,6 +649,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;</ReturnType>
@@ -729,6 +687,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.ResourceProviderResource&gt;&gt;</ReturnType>

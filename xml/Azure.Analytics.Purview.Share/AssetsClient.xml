@@ -109,10 +109,14 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="sentShareName"> The name of the sent share. </param>
         <param name="assetName"> The name of the asset. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Adds a new asset to an existing share. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Adds a new asset to an existing share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
             Create an asset on a sent share
             
@@ -213,35 +217,35 @@
           <paramref name="sentShareName" /> or <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call Create with required parameters and request content and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            var data = new {
-                kind = "AdlsGen2Account",
-                properties = new {
-                    paths = new[] {
-                        new {
-                            containerName = "<StorageAccountPathContainerName>",
-                            receiverPath = "<StorageAccountPathReceiverPath>",
-                            senderPath = "<StorageAccountPathSenderPath>",
-                        }
-                    },
-                    receiverAssetName = "<AdlsGen2AccountAssetPropertiesReceiverAssetName>",
-                    storageAccountResourceId = "<AdlsGen2AccountAssetPropertiesStorageAccountResourceId>",
-                },
-            };
-            
-            var operation = client.Create(WaitUntil.Completed, "<sentShareName>", "<assetName>", RequestContent.Create(data));
-            
-            BinaryData data = operation.WaitForCompletion();
-            JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call Create with required parameters and request content and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+var data = new {
+    properties = new {
+        paths = new[] {
+            new {
+                containerName = "<containerName>",
+                receiverPath = "<receiverPath>",
+                senderPath = "<senderPath>",
+            }
+        },
+        receiverAssetName = "<receiverAssetName>",
+        storageAccountResourceId = "<storageAccountResourceId>",
+    },
+    kind = "AdlsGen2Account",
+};
+
+var operation = client.Create(WaitUntil.Completed, "<sentShareName>", "<assetName>", RequestContent.Create(data), new RequestContext());
+
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
@@ -270,10 +274,14 @@
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         <param name="sentShareName"> The name of the sent share. </param>
         <param name="assetName"> The name of the asset. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Adds a new asset to an existing share. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Adds a new asset to an existing share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
             Create an asset on a sent share
             
@@ -374,35 +382,35 @@
           <paramref name="sentShareName" /> or <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call CreateAsync with required parameters and request content and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            var data = new {
-                kind = "AdlsGen2Account",
-                properties = new {
-                    paths = new[] {
-                        new {
-                            containerName = "<StorageAccountPathContainerName>",
-                            receiverPath = "<StorageAccountPathReceiverPath>",
-                            senderPath = "<StorageAccountPathSenderPath>",
-                        }
-                    },
-                    receiverAssetName = "<AdlsGen2AccountAssetPropertiesReceiverAssetName>",
-                    storageAccountResourceId = "<AdlsGen2AccountAssetPropertiesStorageAccountResourceId>",
-                },
-            };
-            
-            var operation = await client.CreateAsync(WaitUntil.Completed, "<sentShareName>", "<assetName>", RequestContent.Create(data));
-            
-            BinaryData data = await operation.WaitForCompletionAsync();
-            JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call CreateAsync with required parameters and request content and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+var data = new {
+    properties = new {
+        paths = new[] {
+            new {
+                containerName = "<containerName>",
+                receiverPath = "<receiverPath>",
+                senderPath = "<senderPath>",
+            }
+        },
+        receiverAssetName = "<receiverAssetName>",
+        storageAccountResourceId = "<storageAccountResourceId>",
+    },
+    kind = "AdlsGen2Account",
+};
+
+var operation = await client.CreateAsync(WaitUntil.Completed, "<sentShareName>", "<assetName>", RequestContent.Create(data), new RequestContext());
+
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -431,7 +439,11 @@
         <param name="sentShareName"> The name of the sent share. </param>
         <param name="assetName"> The name of the asset. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delete asset in a sentShare. </summary>
+        <summary>
+            [Protocol Method] Delete asset in a sentShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks> Delete an asset on a sent share. </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -440,16 +452,15 @@
           <paramref name="sentShareName" /> or <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call Delete with required parameters.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            var operation = client.Delete(WaitUntil.Completed, "<sentShareName>", "<assetName>");
-            
-            var response = operation.WaitForCompletionResponse();
-            Console.WriteLine(response.Status)
-            ]]></code></example>
+This sample shows how to call Delete with required parameters.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+var operation = client.Delete(WaitUntil.Completed, "<sentShareName>", "<assetName>", new RequestContext());
+
+Console.WriteLine(operation.GetRawResponse().Status);
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
@@ -478,7 +489,11 @@
         <param name="sentShareName"> The name of the sent share. </param>
         <param name="assetName"> The name of the asset. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delete asset in a sentShare. </summary>
+        <summary>
+            [Protocol Method] Delete asset in a sentShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks> Delete an asset on a sent share. </remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -487,16 +502,15 @@
           <paramref name="sentShareName" /> or <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call DeleteAsync with required parameters.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            var operation = await client.DeleteAsync(WaitUntil.Completed, "<sentShareName>", "<assetName>");
-            
-            var response = await operation.WaitForCompletionResponseAsync();
-            Console.WriteLine(response.Status)
-            ]]></code></example>
+This sample shows how to call DeleteAsync with required parameters.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+var operation = await client.DeleteAsync(WaitUntil.Completed, "<sentShareName>", "<assetName>", new RequestContext());
+
+Console.WriteLine(operation.GetRawResponse().Status);
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAsset">
@@ -522,8 +536,12 @@
         <param name="sentShareName"> The name of the sent share. </param>
         <param name="assetName"> The name of the asset. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get asset in a sentShare. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get asset in a sentShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
             Get an asset on a sent share
             
@@ -579,19 +597,19 @@
           <paramref name="sentShareName" /> or <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAsset with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            Response response = client.GetAsset("<sentShareName>", "<assetName>");
-            
-            JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call GetAsset with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+Response response = client.GetAsset("<sentShareName>", "<assetName>", new RequestContext());
+
+JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAssetAsync">
@@ -617,8 +635,12 @@
         <param name="sentShareName"> The name of the sent share. </param>
         <param name="assetName"> The name of the asset. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get asset in a sentShare. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get asset in a sentShare.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
             Get an asset on a sent share
             
@@ -674,19 +696,19 @@
           <paramref name="sentShareName" /> or <paramref name="assetName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAssetAsync with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            Response response = await client.GetAssetAsync("<sentShareName>", "<assetName>");
-            
-            JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
-            Console.WriteLine(result.GetProperty("id").ToString());
-            Console.WriteLine(result.GetProperty("name").ToString());
-            Console.WriteLine(result.GetProperty("type").ToString());
-            Console.WriteLine(result.GetProperty("kind").ToString());
-            ]]></code></example>
+This sample shows how to call GetAssetAsync with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+Response response = await client.GetAssetAsync("<sentShareName>", "<assetName>", new RequestContext());
+
+JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
+Console.WriteLine(result.GetProperty("kind").ToString());
+Console.WriteLine(result.GetProperty("id").ToString());
+Console.WriteLine(result.GetProperty("name").ToString());
+Console.WriteLine(result.GetProperty("type").ToString());
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAssets">
@@ -716,7 +738,11 @@
         <param name="filter"> Filters the results using OData syntax. </param>
         <param name="orderby"> Sorts the results using OData syntax. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List Assets in a share. </summary>
+        <summary>
+            [Protocol Method] List Assets in a share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
             List assets on a sent share
@@ -739,31 +765,32 @@
           <paramref name="sentShareName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAssets with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            foreach (var data in client.GetAssets("<sentShareName>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.ToString());
-            }
-            ]]></code>
-            This sample shows how to call GetAssets with all parameters, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            foreach (var data in client.GetAssets("<sentShareName>", "<skipToken>", "<filter>", "<orderby>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.GetProperty("id").ToString());
-                Console.WriteLine(result.GetProperty("name").ToString());
-                Console.WriteLine(result.GetProperty("type").ToString());
-                Console.WriteLine(result.GetProperty("kind").ToString());
-            }
-            ]]></code></example>
+This sample shows how to call GetAssets with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+foreach (var item in client.GetAssets("<sentShareName>"))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.ToString());
+}
+]]></code>
+This sample shows how to call GetAssets with all parameters, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+foreach (var item in client.GetAssets("<sentShareName>", "<skipToken>", "<filter>", "<orderby>", new RequestContext()))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.GetProperty("id").ToString());
+    Console.WriteLine(result.GetProperty("name").ToString());
+    Console.WriteLine(result.GetProperty("type").ToString());
+}
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetAssetsAsync">
@@ -793,7 +820,11 @@
         <param name="filter"> Filters the results using OData syntax. </param>
         <param name="orderby"> Sorts the results using OData syntax. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List Assets in a share. </summary>
+        <summary>
+            [Protocol Method] List Assets in a share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
             List assets on a sent share
@@ -816,31 +847,32 @@
           <paramref name="sentShareName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetAssetsAsync with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            await foreach (var data in client.GetAssetsAsync("<sentShareName>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.ToString());
-            }
-            ]]></code>
-            This sample shows how to call GetAssetsAsync with all parameters, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new AssetsClient("<https://my-service.azure.com>", credential);
-            
-            await foreach (var data in client.GetAssetsAsync("<sentShareName>", "<skipToken>", "<filter>", "<orderby>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.GetProperty("id").ToString());
-                Console.WriteLine(result.GetProperty("name").ToString());
-                Console.WriteLine(result.GetProperty("type").ToString());
-                Console.WriteLine(result.GetProperty("kind").ToString());
-            }
-            ]]></code></example>
+This sample shows how to call GetAssetsAsync with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+await foreach (var item in client.GetAssetsAsync("<sentShareName>"))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.ToString());
+}
+]]></code>
+This sample shows how to call GetAssetsAsync with all parameters, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new AssetsClient("<https://my-service.azure.com>", credential);
+
+await foreach (var item in client.GetAssetsAsync("<sentShareName>", "<skipToken>", "<filter>", "<orderby>", new RequestContext()))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.GetProperty("id").ToString());
+    Console.WriteLine(result.GetProperty("name").ToString());
+    Console.WriteLine(result.GetProperty("type").ToString());
+}
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

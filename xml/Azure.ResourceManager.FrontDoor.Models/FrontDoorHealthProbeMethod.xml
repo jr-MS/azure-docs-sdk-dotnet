@@ -127,26 +127,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GET">
-      <MemberSignature Language="C#" Value="public static Azure.ResourceManager.FrontDoor.Models.FrontDoorHealthProbeMethod GET { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property valuetype Azure.ResourceManager.FrontDoor.Models.FrontDoorHealthProbeMethod GET" />
-      <MemberSignature Language="DocId" Value="P:Azure.ResourceManager.FrontDoor.Models.FrontDoorHealthProbeMethod.GET" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GET As FrontDoorHealthProbeMethod" />
-      <MemberSignature Language="F#" Value="static member GET : Azure.ResourceManager.FrontDoor.Models.FrontDoorHealthProbeMethod" Usage="Azure.ResourceManager.FrontDoor.Models.FrontDoorHealthProbeMethod.GET" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager.FrontDoor</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.FrontDoor.Models.FrontDoorHealthProbeMethod</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary> GET. </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />

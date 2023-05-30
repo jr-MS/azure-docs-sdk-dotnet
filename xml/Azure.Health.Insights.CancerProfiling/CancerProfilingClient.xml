@@ -107,12 +107,18 @@
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="repeatabilityRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="repeatabilityFirstSent"> Specifies the date and time at which the request was first created. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Create Onco Phenotype job. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Create Onco Phenotype job
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item><item><description>
+            Please try the simpler <see cref="M:Azure.Health.Insights.CancerProfiling.CancerProfilingClient.InferCancerProfile(Azure.WaitUntil,Azure.Health.Insights.CancerProfiling.OncoPhenotypeData,System.String,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Creates an Onco Phenotype job with the given request body.
 
@@ -191,8 +197,8 @@ var data = new {
 
 var operation = client.InferCancerProfile(WaitUntil.Completed, RequestContent.Create(data));
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("jobId").ToString());
 Console.WriteLine(result.GetProperty("createdDateTime").ToString());
 Console.WriteLine(result.GetProperty("expirationDateTime").ToString());
@@ -246,10 +252,10 @@ var data = new {
     },
 };
 
-var operation = client.InferCancerProfile(WaitUntil.Completed, RequestContent.Create(data), "<repeatabilityRequestId>", DateTimeOffset.UtcNow);
+var operation = client.InferCancerProfile(WaitUntil.Completed, RequestContent.Create(data), "<repeatabilityRequestId>", DateTimeOffset.UtcNow, new RequestContext());
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("jobId").ToString());
 Console.WriteLine(result.GetProperty("createdDateTime").ToString());
 Console.WriteLine(result.GetProperty("expirationDateTime").ToString());
@@ -311,6 +317,55 @@ Console.WriteLine(result.GetProperty("results").GetProperty("modelVersion").ToSt
         <remarks> Creates an Onco Phenotype job with the given request body. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="oncoPhenotypeData" /> is null. </exception>
+        <example>
+This sample shows how to call InferCancerProfile with required parameters.
+<code><![CDATA[
+var credential = new AzureKeyCredential("<key>");
+var endpoint = new Uri("<https://my-service.azure.com>");
+var client = new CancerProfilingClient(endpoint, credential);
+
+var oncoPhenotypeData = new OncoPhenotypeData(new PatientRecord[] 
+{
+    new PatientRecord("<id>")
+{
+        Info = new PatientInfo()
+{
+            Sex = PatientInfoSex.Female,
+            BirthDate = DateTimeOffset.UtcNow,
+            ClinicalInfo = 
+{
+                new ClinicalCodedElement("<system>", "<code>")
+{
+                    Name = "<Name>",
+                    Value = "<Value>",
+                }
+            },
+        },
+        Data = 
+{
+            new PatientDocument(DocumentType.Note, "<id>", new DocumentContent(DocumentContentSourceType.Inline, "<value>"))
+{
+                ClinicalType = ClinicalDocumentType.Consultation,
+                Language = "<Language>",
+                CreatedDateTime = DateTimeOffset.UtcNow,
+            }
+        },
+    }
+})
+{
+    Configuration = new OncoPhenotypeModelConfiguration()
+{
+        Verbose = true,
+        IncludeEvidence = true,
+        InferenceTypes = 
+{
+            OncoPhenotypeInferenceType.TumorSite
+        },
+        CheckForCancerCase = true,
+    },
+};
+var operation = client.InferCancerProfile(WaitUntil.Completed, oncoPhenotypeData, "<repeatabilityRequestId>", DateTimeOffset.UtcNow);
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="InferCancerProfileAsync">
@@ -337,12 +392,18 @@ Console.WriteLine(result.GetProperty("results").GetProperty("modelVersion").ToSt
       <Docs>
         <param name="waitUntil">
           <see cref="F:Azure.WaitUntil.Completed" /> if the method should wait to return until the long-running operation has completed on the service; <see cref="F:Azure.WaitUntil.Started" /> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="repeatabilityRequestId"> An opaque, globally-unique, client-generated string identifier for the request. </param>
         <param name="repeatabilityFirstSent"> Specifies the date and time at which the request was first created. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Create Onco Phenotype job. </summary>
-        <returns> The <see cref="T:Azure.Operation`1" /> from the service that will contain a <see cref="T:System.BinaryData" /> object once the asynchronous operation on the service has completed. Details of the body schema for the operation's final value are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Create Onco Phenotype job
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item><item><description>
+            Please try the simpler <see cref="M:Azure.Health.Insights.CancerProfiling.CancerProfilingClient.InferCancerProfileAsync(Azure.WaitUntil,Azure.Health.Insights.CancerProfiling.OncoPhenotypeData,System.String,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken)" /> convenience overload with strongly typed models first.
+            </description></item></list></summary>
+        <returns> The <see cref="T:Azure.Operation" /> representing an asynchronous operation on the service. </returns>
         <remarks>
 Creates an Onco Phenotype job with the given request body.
 
@@ -421,8 +482,8 @@ var data = new {
 
 var operation = await client.InferCancerProfileAsync(WaitUntil.Completed, RequestContent.Create(data));
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("jobId").ToString());
 Console.WriteLine(result.GetProperty("createdDateTime").ToString());
 Console.WriteLine(result.GetProperty("expirationDateTime").ToString());
@@ -476,10 +537,10 @@ var data = new {
     },
 };
 
-var operation = await client.InferCancerProfileAsync(WaitUntil.Completed, RequestContent.Create(data), "<repeatabilityRequestId>", DateTimeOffset.UtcNow);
+var operation = await client.InferCancerProfileAsync(WaitUntil.Completed, RequestContent.Create(data), "<repeatabilityRequestId>", DateTimeOffset.UtcNow, new RequestContext());
 
-BinaryData data = operation.Value;
-JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+BinaryData responseData = operation.Value;
+JsonElement result = JsonDocument.Parse(responseData.ToStream()).RootElement;
 Console.WriteLine(result.GetProperty("jobId").ToString());
 Console.WriteLine(result.GetProperty("createdDateTime").ToString());
 Console.WriteLine(result.GetProperty("expirationDateTime").ToString());
@@ -541,6 +602,55 @@ Console.WriteLine(result.GetProperty("results").GetProperty("modelVersion").ToSt
         <remarks> Creates an Onco Phenotype job with the given request body. </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="oncoPhenotypeData" /> is null. </exception>
+        <example>
+This sample shows how to call InferCancerProfileAsync with required parameters.
+<code><![CDATA[
+var credential = new AzureKeyCredential("<key>");
+var endpoint = new Uri("<https://my-service.azure.com>");
+var client = new CancerProfilingClient(endpoint, credential);
+
+var oncoPhenotypeData = new OncoPhenotypeData(new PatientRecord[] 
+{
+    new PatientRecord("<id>")
+{
+        Info = new PatientInfo()
+{
+            Sex = PatientInfoSex.Female,
+            BirthDate = DateTimeOffset.UtcNow,
+            ClinicalInfo = 
+{
+                new ClinicalCodedElement("<system>", "<code>")
+{
+                    Name = "<Name>",
+                    Value = "<Value>",
+                }
+            },
+        },
+        Data = 
+{
+            new PatientDocument(DocumentType.Note, "<id>", new DocumentContent(DocumentContentSourceType.Inline, "<value>"))
+{
+                ClinicalType = ClinicalDocumentType.Consultation,
+                Language = "<Language>",
+                CreatedDateTime = DateTimeOffset.UtcNow,
+            }
+        },
+    }
+})
+{
+    Configuration = new OncoPhenotypeModelConfiguration()
+{
+        Verbose = true,
+        IncludeEvidence = true,
+        InferenceTypes = 
+{
+            OncoPhenotypeInferenceType.TumorSite
+        },
+        CheckForCancerCase = true,
+    },
+};
+var operation = await client.InferCancerProfileAsync(WaitUntil.Completed, oncoPhenotypeData, "<repeatabilityRequestId>", DateTimeOffset.UtcNow);
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

@@ -14,9 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The Storage Resource class for the Blob Client. Directories are not supported
-            as blobs only support a flat namespace structure. See <see cref="T:Azure.Storage.DataMovement.Blobs.BlobDirectoryStorageResourceContainer" />
-            for directory support.
+            The Storage Resource class for the Blob Client. Supports blob prefix directories as well as the root container.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -88,7 +86,7 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path to the storage resource.</param>
+        <param name="path">The path to the storage resource, relative to the directory prefix if any.</param>
         <summary>
             Retrieves a single blob resource based on this respective resource.
             </summary>
@@ -113,10 +111,16 @@
       <Parameters />
       <Docs>
         <summary>
-            Will throw an NotSupported exception because Blob container is considered the root level.
+            Gets the parent container resource for this container resource. The parent container
+            can represent either a directory prefix or the blob container itself.
             </summary>
-        <returns />
+        <returns>
+            The parent resource container.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">
+            A container resource that represents the blob container itself has no parent.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="GetStorageResourcesAsync">
@@ -132,8 +136,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.Storage.DataMovement.Blobs.BlobStorageResourceContainer+&lt;GetStorageResourcesAsync&gt;d__12))]</AttributeName>
-          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.Storage.DataMovement.Blobs.BlobStorageResourceContainer+&lt;GetStorageResourcesAsync&gt;d__12))&gt;]</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.Storage.DataMovement.Blobs.BlobStorageResourceContainer+&lt;GetStorageResourcesAsync&gt;d__16))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.Storage.DataMovement.Blobs.BlobStorageResourceContainer+&lt;GetStorageResourcesAsync&gt;d__16))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -177,6 +181,7 @@
       <Docs>
         <summary>
             Gets the path of the storage resource.
+            Return empty string since we are using the root of the container.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

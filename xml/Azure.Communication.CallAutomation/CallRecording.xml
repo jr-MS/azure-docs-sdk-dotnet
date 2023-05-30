@@ -35,12 +35,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DeleteRecording">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response DeleteRecording (Uri recordingLocation, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response DeleteRecording(class System.Uri recordingLocation, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.DeleteRecording(System.Uri,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteRecording (recordingLocation As Uri, Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member DeleteRecording : Uri * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.DeleteRecording : Uri * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.DeleteRecording (recordingLocation, cancellationToken)" />
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Delete (Uri recordingLocation, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Delete(class System.Uri recordingLocation, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.Delete(System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Delete (recordingLocation As Uri, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Delete : Uri * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Delete : Uri * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.Delete (recordingLocation, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -62,7 +62,7 @@
             notifications that the operation should be canceled.
             </param>
         <summary>
-            The <see cref="M:Azure.Communication.CallAutomation.CallRecording.DeleteRecording(System.Uri,System.Threading.CancellationToken)" />
+            The <see cref="M:Azure.Communication.CallAutomation.CallRecording.Delete(System.Uri,System.Threading.CancellationToken)" />
             operation deletes the specified content from storage.
             </summary>
         <returns>
@@ -74,12 +74,12 @@
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="DeleteRecordingAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteRecordingAsync (Uri recordingLocation, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteRecordingAsync(class System.Uri recordingLocation, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.DeleteRecordingAsync(System.Uri,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteRecordingAsync (recordingLocation As Uri, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member DeleteRecordingAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteRecordingAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.DeleteRecordingAsync (recordingLocation, cancellationToken)" />
+    <Member MemberName="DeleteAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Uri recordingLocation, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; DeleteAsync(class System.Uri recordingLocation, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.DeleteAsync(System.Uri,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteAsync (recordingLocation As Uri, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.DeleteAsync : Uri * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.DeleteAsync (recordingLocation, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -101,7 +101,7 @@
             notifications that the operation should be canceled.
             </param>
         <summary>
-            The <see cref="M:Azure.Communication.CallAutomation.CallRecording.DeleteRecordingAsync(System.Uri,System.Threading.CancellationToken)" />
+            The <see cref="M:Azure.Communication.CallAutomation.CallRecording.DeleteAsync(System.Uri,System.Threading.CancellationToken)" />
             operation deletes the specified content from storage
             using parallel requests.
             </summary>
@@ -402,12 +402,12 @@
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetRecordingState">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt; GetRecordingState (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt; GetRecordingState(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.GetRecordingState(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecordingState (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of RecordingStateResult)" />
-      <MemberSignature Language="F#" Value="abstract member GetRecordingState : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&#xA;override this.GetRecordingState : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;" Usage="callRecording.GetRecordingState (recordingId, cancellationToken)" />
+    <Member MemberName="GetState">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt; GetState (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt; GetState(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.GetState(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetState (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response(Of RecordingStateResult)" />
+      <MemberSignature Language="F#" Value="abstract member GetState : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&#xA;override this.GetState : string * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;" Usage="callRecording.GetState (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -430,12 +430,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetRecordingStateAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; GetRecordingStateAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; GetRecordingStateAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.GetRecordingStateAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRecordingStateAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of RecordingStateResult))" />
-      <MemberSignature Language="F#" Value="abstract member GetRecordingStateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;&#xA;override this.GetRecordingStateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;" Usage="callRecording.GetRecordingStateAsync (recordingId, cancellationToken)" />
+    <Member MemberName="GetStateAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; GetStateAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; GetStateAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.GetStateAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStateAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of RecordingStateResult))" />
+      <MemberSignature Language="F#" Value="abstract member GetStateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;&#xA;override this.GetStateAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;" Usage="callRecording.GetStateAsync (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -458,12 +458,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PauseRecording">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response PauseRecording (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response PauseRecording(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.PauseRecording(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PauseRecording (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member PauseRecording : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.PauseRecording : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.PauseRecording (recordingId, cancellationToken)" />
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Pause (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Pause(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.Pause(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Pause (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Pause : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Pause : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.Pause (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -486,12 +486,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PauseRecordingAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; PauseRecordingAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; PauseRecordingAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.PauseRecordingAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function PauseRecordingAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member PauseRecordingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.PauseRecordingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.PauseRecordingAsync (recordingId, cancellationToken)" />
+    <Member MemberName="PauseAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; PauseAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; PauseAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.PauseAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function PauseAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member PauseAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.PauseAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.PauseAsync (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -514,12 +514,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ResumeRecording">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response ResumeRecording (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response ResumeRecording(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.ResumeRecording(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResumeRecording (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member ResumeRecording : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.ResumeRecording : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.ResumeRecording (recordingId, cancellationToken)" />
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Resume (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Resume(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.Resume(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Resume (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Resume : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Resume : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.Resume (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -542,12 +542,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ResumeRecordingAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ResumeRecordingAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ResumeRecordingAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.ResumeRecordingAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResumeRecordingAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member ResumeRecordingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ResumeRecordingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.ResumeRecordingAsync (recordingId, cancellationToken)" />
+    <Member MemberName="ResumeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; ResumeAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; ResumeAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.ResumeAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResumeAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member ResumeAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.ResumeAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.ResumeAsync (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -570,12 +570,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="StartRecording">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt; StartRecording (Azure.Communication.CallAutomation.StartRecordingOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt; StartRecording(class Azure.Communication.CallAutomation.StartRecordingOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.StartRecording(Azure.Communication.CallAutomation.StartRecordingOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartRecording (options As StartRecordingOptions, Optional cancellationToken As CancellationToken = Nothing) As Response(Of RecordingStateResult)" />
-      <MemberSignature Language="F#" Value="abstract member StartRecording : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&#xA;override this.StartRecording : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;" Usage="callRecording.StartRecording (options, cancellationToken)" />
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt; Start (Azure.Communication.CallAutomation.StartRecordingOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt; Start(class Azure.Communication.CallAutomation.StartRecordingOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.Start(Azure.Communication.CallAutomation.StartRecordingOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Start (options As StartRecordingOptions, Optional cancellationToken As CancellationToken = Nothing) As Response(Of RecordingStateResult)" />
+      <MemberSignature Language="F#" Value="abstract member Start : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&#xA;override this.Start : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;" Usage="callRecording.Start (options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -598,12 +598,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="StartRecordingAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; StartRecordingAsync (Azure.Communication.CallAutomation.StartRecordingOptions options, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; StartRecordingAsync(class Azure.Communication.CallAutomation.StartRecordingOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.StartRecordingAsync(Azure.Communication.CallAutomation.StartRecordingOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartRecordingAsync (options As StartRecordingOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of RecordingStateResult))" />
-      <MemberSignature Language="F#" Value="abstract member StartRecordingAsync : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;&#xA;override this.StartRecordingAsync : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;" Usage="callRecording.StartRecordingAsync (options, cancellationToken)" />
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; StartAsync (Azure.Communication.CallAutomation.StartRecordingOptions options, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response`1&lt;class Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt; StartAsync(class Azure.Communication.CallAutomation.StartRecordingOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.StartAsync(Azure.Communication.CallAutomation.StartRecordingOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StartAsync (options As StartRecordingOptions, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response(Of RecordingStateResult))" />
+      <MemberSignature Language="F#" Value="abstract member StartAsync : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;&#xA;override this.StartAsync : Azure.Communication.CallAutomation.StartRecordingOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Communication.CallAutomation.RecordingStateResult&gt;&gt;" Usage="callRecording.StartAsync (options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -626,12 +626,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="StopRecording">
-      <MemberSignature Language="C#" Value="public virtual Azure.Response StopRecording (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response StopRecording(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.StopRecording(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopRecording (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
-      <MemberSignature Language="F#" Value="abstract member StopRecording : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.StopRecording : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.StopRecording (recordingId, cancellationToken)" />
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public virtual Azure.Response Stop (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Response Stop(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.Stop(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Stop (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Response" />
+      <MemberSignature Language="F#" Value="abstract member Stop : string * System.Threading.CancellationToken -&gt; Azure.Response&#xA;override this.Stop : string * System.Threading.CancellationToken -&gt; Azure.Response" Usage="callRecording.Stop (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
@@ -654,12 +654,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="StopRecordingAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; StopRecordingAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; StopRecordingAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.StopRecordingAsync(System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopRecordingAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
-      <MemberSignature Language="F#" Value="abstract member StopRecordingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.StopRecordingAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.StopRecordingAsync (recordingId, cancellationToken)" />
+    <Member MemberName="StopAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; StopAsync (string recordingId, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Azure.Response&gt; StopAsync(string recordingId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.CallRecording.StopAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function StopAsync (recordingId As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Response)" />
+      <MemberSignature Language="F#" Value="abstract member StopAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;&#xA;override this.StopAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Azure.Response&gt;" Usage="callRecording.StopAsync (recordingId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>

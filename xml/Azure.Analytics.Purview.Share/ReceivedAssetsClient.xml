@@ -106,7 +106,11 @@
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="skipToken"> The continuation token to list the next page. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List source asset of a received share. </summary>
+        <summary>
+            [Protocol Method] List source asset of a received share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
             List received assets for a received share
@@ -129,31 +133,32 @@
           <paramref name="receivedShareName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetReceivedAssets with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
-            
-            foreach (var data in client.GetReceivedAssets("<receivedShareName>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.ToString());
-            }
-            ]]></code>
-            This sample shows how to call GetReceivedAssets with all parameters, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
-            
-            foreach (var data in client.GetReceivedAssets("<receivedShareName>", "<skipToken>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.GetProperty("id").ToString());
-                Console.WriteLine(result.GetProperty("name").ToString());
-                Console.WriteLine(result.GetProperty("type").ToString());
-                Console.WriteLine(result.GetProperty("kind").ToString());
-            }
-            ]]></code></example>
+This sample shows how to call GetReceivedAssets with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
+
+foreach (var item in client.GetReceivedAssets("<receivedShareName>"))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.ToString());
+}
+]]></code>
+This sample shows how to call GetReceivedAssets with all parameters, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
+
+foreach (var item in client.GetReceivedAssets("<receivedShareName>", "<skipToken>", new RequestContext()))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.GetProperty("id").ToString());
+    Console.WriteLine(result.GetProperty("name").ToString());
+    Console.WriteLine(result.GetProperty("type").ToString());
+}
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="GetReceivedAssetsAsync">
@@ -179,7 +184,11 @@
         <param name="receivedShareName"> The name of the received share. </param>
         <param name="skipToken"> The continuation token to list the next page. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List source asset of a received share. </summary>
+        <summary>
+            [Protocol Method] List source asset of a received share.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
             List received assets for a received share
@@ -202,31 +211,32 @@
           <paramref name="receivedShareName" /> is an empty string, and was expected to be non-empty. </exception>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
         <example>
-            This sample shows how to call GetReceivedAssetsAsync with required parameters and parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
-            
-            await foreach (var data in client.GetReceivedAssetsAsync("<receivedShareName>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.ToString());
-            }
-            ]]></code>
-            This sample shows how to call GetReceivedAssetsAsync with all parameters, and how to parse the result.
-            <code><![CDATA[
-            var credential = new DefaultAzureCredential();
-            var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
-            
-            await foreach (var data in client.GetReceivedAssetsAsync("<receivedShareName>", "<skipToken>"))
-            {
-                JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
-                Console.WriteLine(result.GetProperty("id").ToString());
-                Console.WriteLine(result.GetProperty("name").ToString());
-                Console.WriteLine(result.GetProperty("type").ToString());
-                Console.WriteLine(result.GetProperty("kind").ToString());
-            }
-            ]]></code></example>
+This sample shows how to call GetReceivedAssetsAsync with required parameters and parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
+
+await foreach (var item in client.GetReceivedAssetsAsync("<receivedShareName>"))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.ToString());
+}
+]]></code>
+This sample shows how to call GetReceivedAssetsAsync with all parameters, and how to parse the result.
+<code><![CDATA[
+var credential = new DefaultAzureCredential();
+var client = new ReceivedAssetsClient("<https://my-service.azure.com>", credential);
+
+await foreach (var item in client.GetReceivedAssetsAsync("<receivedShareName>", "<skipToken>", new RequestContext()))
+{
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
+    Console.WriteLine(result.GetProperty("kind").ToString());
+    Console.WriteLine(result.GetProperty("id").ToString());
+    Console.WriteLine(result.GetProperty("name").ToString());
+    Console.WriteLine(result.GetProperty("type").ToString());
+}
+]]></code></example>
       </Docs>
     </Member>
     <Member MemberName="Pipeline">

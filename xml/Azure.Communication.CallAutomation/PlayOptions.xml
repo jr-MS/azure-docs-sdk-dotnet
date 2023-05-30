@@ -14,24 +14,32 @@
   <Interfaces />
   <Docs>
     <summary>
-            Options to be used in the play operations.
+            Options to be used in the Play operation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PlayOptions ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.PlayOptions.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C#" Value="public PlayOptions (Azure.Communication.CallAutomation.PlaySource playSource, System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt; playTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Communication.CallAutomation.PlaySource playSource, class System.Collections.Generic.IEnumerable`1&lt;class Azure.Communication.CommunicationIdentifier&gt; playTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Communication.CallAutomation.PlayOptions.#ctor(Azure.Communication.CallAutomation.PlaySource,System.Collections.Generic.IEnumerable{Azure.Communication.CommunicationIdentifier})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (playSource As PlaySource, playTo As IEnumerable(Of CommunicationIdentifier))" />
+      <MemberSignature Language="F#" Value="new Azure.Communication.CallAutomation.PlayOptions : Azure.Communication.CallAutomation.PlaySource * seq&lt;Azure.Communication.CommunicationIdentifier&gt; -&gt; Azure.Communication.CallAutomation.PlayOptions" Usage="new Azure.Communication.CallAutomation.PlayOptions (playSource, playTo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="playSource" Type="Azure.Communication.CallAutomation.PlaySource" />
+        <Parameter Name="playTo" Type="System.Collections.Generic.IEnumerable&lt;Azure.Communication.CommunicationIdentifier&gt;" />
+      </Parameters>
       <Docs>
-        <summary>To be added.</summary>
+        <param name="playSource">To be added.</param>
+        <param name="playTo">To be added.</param>
+        <summary>
+            Creates a new PlayOptions object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +58,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The option to play the provided audio source in loop when set to true. </summary>
+        <summary>
+            The option to play the provided audio source in loop when set to true.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -70,7 +80,53 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary> The Operation Context. </summary>
+        <summary>
+            The Operation Context.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaySource">
+      <MemberSignature Language="C#" Value="public Azure.Communication.CallAutomation.PlaySource PlaySource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CallAutomation.PlaySource PlaySource" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.PlayOptions.PlaySource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlaySource As PlaySource" />
+      <MemberSignature Language="F#" Value="member this.PlaySource : Azure.Communication.CallAutomation.PlaySource" Usage="Azure.Communication.CallAutomation.PlayOptions.PlaySource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Communication.CallAutomation.PlaySource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A PlaySource object representing the source to play.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlayTo">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CommunicationIdentifier&gt; PlayTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyList`1&lt;class Azure.Communication.CommunicationIdentifier&gt; PlayTo" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.PlayOptions.PlayTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlayTo As IReadOnlyList(Of CommunicationIdentifier)" />
+      <MemberSignature Language="F#" Value="member this.PlayTo : System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CommunicationIdentifier&gt;" Usage="Azure.Communication.CallAutomation.PlayOptions.PlayTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Azure.Communication.CommunicationIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A list of target identifiers to play the file to.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

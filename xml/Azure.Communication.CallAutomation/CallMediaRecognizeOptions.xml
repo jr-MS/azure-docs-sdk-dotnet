@@ -176,6 +176,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SpeechLanguage">
+      <MemberSignature Language="C#" Value="public string SpeechLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SpeechLanguage" />
+      <MemberSignature Language="DocId" Value="P:Azure.Communication.CallAutomation.CallMediaRecognizeOptions.SpeechLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeechLanguage As String" />
+      <MemberSignature Language="F#" Value="member this.SpeechLanguage : string with get, set" Usage="Azure.Communication.CallAutomation.CallMediaRecognizeOptions.SpeechLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Communication.CallAutomation</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Speech language to be recognized, If not set default is en-US. </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TargetParticipant">
       <MemberSignature Language="C#" Value="public Azure.Communication.CommunicationIdentifier TargetParticipant { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Azure.Communication.CommunicationIdentifier TargetParticipant" />

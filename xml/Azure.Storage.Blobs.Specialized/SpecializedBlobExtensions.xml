@@ -36,6 +36,7 @@
     <AssemblyVersion>12.15.0.0</AssemblyVersion>
     <AssemblyVersion>12.15.1.0</AssemblyVersion>
     <AssemblyVersion>12.16.0.0</AssemblyVersion>
+    <AssemblyVersion>12.17.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -50,11 +51,11 @@
   </Docs>
   <Members>
     <Member MemberName="GetAppendBlobClient">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.AppendBlobClient GetAppendBlobClient (this Azure.Storage.Blobs.BlobContainerClient client, string blobName);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.AppendBlobClient GetAppendBlobClient(class Azure.Storage.Blobs.BlobContainerClient client, string blobName) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetAppendBlobClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppendBlobClient (client As BlobContainerClient, blobName As String) As AppendBlobClient" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member GetAppendBlobClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.AppendBlobClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetAppendBlobClient (client, blobName)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.AppendBlobClient GetAppendBlobClient (this Azure.Storage.Blobs.BlobContainerClient client, string blobName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.AppendBlobClient GetAppendBlobClient(class Azure.Storage.Blobs.BlobContainerClient client, string blobName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetAppendBlobClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAppendBlobClient (client As BlobContainerClient, blobName As String) As AppendBlobClient" />
+      <MemberSignature Language="F#" Value="static member GetAppendBlobClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.AppendBlobClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetAppendBlobClient (client, blobName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -72,8 +73,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Storage.Blobs.Specialized.AppendBlobClient</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.BlobContainerClient" RefType="this" />
         <Parameter Name="blobName" Type="System.String" />
@@ -95,11 +99,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetBlobBaseClient">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlobBaseClient GetBlobBaseClient (this Azure.Storage.Blobs.BlobContainerClient client, string blobName);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlobBaseClient GetBlobBaseClient(class Azure.Storage.Blobs.BlobContainerClient client, string blobName) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobBaseClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobBaseClient (client As BlobContainerClient, blobName As String) As BlobBaseClient" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member GetBlobBaseClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.BlobBaseClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobBaseClient (client, blobName)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlobBaseClient GetBlobBaseClient (this Azure.Storage.Blobs.BlobContainerClient client, string blobName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlobBaseClient GetBlobBaseClient(class Azure.Storage.Blobs.BlobContainerClient client, string blobName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobBaseClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobBaseClient (client As BlobContainerClient, blobName As String) As BlobBaseClient" />
+      <MemberSignature Language="F#" Value="static member GetBlobBaseClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.BlobBaseClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobBaseClient (client, blobName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -117,8 +121,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Storage.Blobs.Specialized.BlobBaseClient</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.BlobContainerClient" RefType="this" />
         <Parameter Name="blobName" Type="System.String" />
@@ -160,7 +167,7 @@
         <ReturnType>Azure.Storage.Blobs.Specialized.BlobBatchClient</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="client" Type="Azure.Storage.Blobs.BlobContainerClient" RefType="this" />
+        <Parameter Name="client" Type="Azure.Storage.Blobs.BlobContainerClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
       </Parameters>
       <Docs>
         <param name="client">The <see cref="T:Azure.Storage.Blobs.BlobContainerClient" />.</param>
@@ -199,7 +206,7 @@
         <ReturnType>Azure.Storage.Blobs.Specialized.BlobBatchClient</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="client" Type="Azure.Storage.Blobs.BlobServiceClient" RefType="this" />
+        <Parameter Name="client" Type="Azure.Storage.Blobs.BlobServiceClient" Index="0" FrameworkAlternate="azure-dotnet" RefType="this" />
       </Parameters>
       <Docs>
         <param name="client">The <see cref="T:Azure.Storage.Blobs.BlobServiceClient" />.</param>
@@ -214,11 +221,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetBlobLeaseClient">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient (this Azure.Storage.Blobs.BlobContainerClient client, string leaseId = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient(class Azure.Storage.Blobs.BlobContainerClient client, string leaseId) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobLeaseClient (client As BlobContainerClient, Optional leaseId As String = Nothing) As BlobLeaseClient" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member GetBlobLeaseClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.BlobLeaseClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient (client, leaseId)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient (this Azure.Storage.Blobs.BlobContainerClient client, string leaseId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient(class Azure.Storage.Blobs.BlobContainerClient client, string leaseId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobLeaseClient (client As BlobContainerClient, Optional leaseId As String = Nothing) As BlobLeaseClient" />
+      <MemberSignature Language="F#" Value="static member GetBlobLeaseClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.BlobLeaseClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient (client, leaseId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -236,8 +243,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Storage.Blobs.Specialized.BlobLeaseClient</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.BlobContainerClient" RefType="this" />
         <Parameter Name="leaseId" Type="System.String" />
@@ -259,11 +269,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetBlobLeaseClient">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient (this Azure.Storage.Blobs.Specialized.BlobBaseClient client, string leaseId = default);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient(class Azure.Storage.Blobs.Specialized.BlobBaseClient client, string leaseId) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient(Azure.Storage.Blobs.Specialized.BlobBaseClient,System.String)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobLeaseClient (client As BlobBaseClient, Optional leaseId As String = Nothing) As BlobLeaseClient" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member GetBlobLeaseClient : Azure.Storage.Blobs.Specialized.BlobBaseClient * string -&gt; Azure.Storage.Blobs.Specialized.BlobLeaseClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient (client, leaseId)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient (this Azure.Storage.Blobs.Specialized.BlobBaseClient client, string leaseId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlobLeaseClient GetBlobLeaseClient(class Azure.Storage.Blobs.Specialized.BlobBaseClient client, string leaseId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient(Azure.Storage.Blobs.Specialized.BlobBaseClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlobLeaseClient (client As BlobBaseClient, Optional leaseId As String = Nothing) As BlobLeaseClient" />
+      <MemberSignature Language="F#" Value="static member GetBlobLeaseClient : Azure.Storage.Blobs.Specialized.BlobBaseClient * string -&gt; Azure.Storage.Blobs.Specialized.BlobLeaseClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlobLeaseClient (client, leaseId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -281,8 +291,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Storage.Blobs.Specialized.BlobLeaseClient</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.Specialized.BlobBaseClient" RefType="this" />
         <Parameter Name="leaseId" Type="System.String" />
@@ -303,11 +316,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetBlockBlobClient">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlockBlobClient GetBlockBlobClient (this Azure.Storage.Blobs.BlobContainerClient client, string blobName);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlockBlobClient GetBlockBlobClient(class Azure.Storage.Blobs.BlobContainerClient client, string blobName) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlockBlobClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlockBlobClient (client As BlobContainerClient, blobName As String) As BlockBlobClient" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member GetBlockBlobClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.BlockBlobClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlockBlobClient (client, blobName)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.Specialized.BlockBlobClient GetBlockBlobClient (this Azure.Storage.Blobs.BlobContainerClient client, string blobName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.Specialized.BlockBlobClient GetBlockBlobClient(class Azure.Storage.Blobs.BlobContainerClient client, string blobName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlockBlobClient(Azure.Storage.Blobs.BlobContainerClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetBlockBlobClient (client As BlobContainerClient, blobName As String) As BlockBlobClient" />
+      <MemberSignature Language="F#" Value="static member GetBlockBlobClient : Azure.Storage.Blobs.BlobContainerClient * string -&gt; Azure.Storage.Blobs.Specialized.BlockBlobClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetBlockBlobClient (client, blobName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -325,8 +338,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Storage.Blobs.Specialized.BlockBlobClient</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.BlobContainerClient" RefType="this" />
         <Parameter Name="blobName" Type="System.String" />
@@ -376,11 +392,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentBlobContainerClient">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.BlobContainerClient GetParentBlobContainerClient (this Azure.Storage.Blobs.Specialized.BlobBaseClient client);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.BlobContainerClient GetParentBlobContainerClient(class Azure.Storage.Blobs.Specialized.BlobBaseClient client) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobContainerClient(Azure.Storage.Blobs.Specialized.BlobBaseClient)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetParentBlobContainerClient (client As BlobBaseClient) As BlobContainerClient" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member GetParentBlobContainerClient : Azure.Storage.Blobs.Specialized.BlobBaseClient -&gt; Azure.Storage.Blobs.BlobContainerClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobContainerClient client" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.BlobContainerClient GetParentBlobContainerClient (this Azure.Storage.Blobs.Specialized.BlobBaseClient client);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.BlobContainerClient GetParentBlobContainerClient(class Azure.Storage.Blobs.Specialized.BlobBaseClient client) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobContainerClient(Azure.Storage.Blobs.Specialized.BlobBaseClient)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetParentBlobContainerClient (client As BlobBaseClient) As BlobContainerClient" />
+      <MemberSignature Language="F#" Value="static member GetParentBlobContainerClient : Azure.Storage.Blobs.Specialized.BlobBaseClient -&gt; Azure.Storage.Blobs.BlobContainerClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobContainerClient client" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -398,8 +414,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Storage.Blobs.BlobContainerClient</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.Specialized.BlobBaseClient" RefType="this" />
       </Parameters>
@@ -416,11 +435,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetParentBlobServiceClient">
-      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.BlobServiceClient GetParentBlobServiceClient (this Azure.Storage.Blobs.BlobContainerClient client);" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.BlobServiceClient GetParentBlobServiceClient(class Azure.Storage.Blobs.BlobContainerClient client) cil managed" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobServiceClient(Azure.Storage.Blobs.BlobContainerClient)" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetParentBlobServiceClient (client As BlobContainerClient) As BlobServiceClient" FrameworkAlternate="azure-dotnet" />
-      <MemberSignature Language="F#" Value="static member GetParentBlobServiceClient : Azure.Storage.Blobs.BlobContainerClient -&gt; Azure.Storage.Blobs.BlobServiceClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobServiceClient client" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public static Azure.Storage.Blobs.BlobServiceClient GetParentBlobServiceClient (this Azure.Storage.Blobs.BlobContainerClient client);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Azure.Storage.Blobs.BlobServiceClient GetParentBlobServiceClient(class Azure.Storage.Blobs.BlobContainerClient client) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobServiceClient(Azure.Storage.Blobs.BlobContainerClient)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetParentBlobServiceClient (client As BlobContainerClient) As BlobServiceClient" />
+      <MemberSignature Language="F#" Value="static member GetParentBlobServiceClient : Azure.Storage.Blobs.BlobContainerClient -&gt; Azure.Storage.Blobs.BlobServiceClient" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.GetParentBlobServiceClient client" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -438,8 +457,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">Azure.Storage.Blobs.BlobServiceClient</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.BlobContainerClient" RefType="this" />
       </Parameters>
@@ -456,11 +478,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateClientSideKeyEncryptionKey">
-      <MemberSignature Language="C#" Value="public static void UpdateClientSideKeyEncryptionKey (this Azure.Storage.Blobs.BlobClient client, Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateClientSideKeyEncryptionKey(class Azure.Storage.Blobs.BlobClient client, class Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKey(Azure.Storage.Blobs.BlobClient,Azure.Storage.ClientSideEncryptionOptions,Azure.Storage.Blobs.Models.BlobRequestConditions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateClientSideKeyEncryptionKey (client As BlobClient, Optional encryptionOptionsOverride As ClientSideEncryptionOptions = Nothing, Optional conditions As BlobRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing)" />
-      <MemberSignature Language="F#" Value="static member UpdateClientSideKeyEncryptionKey : Azure.Storage.Blobs.BlobClient * Azure.Storage.ClientSideEncryptionOptions * Azure.Storage.Blobs.Models.BlobRequestConditions * System.Threading.CancellationToken -&gt; unit" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKey (client, encryptionOptionsOverride, conditions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static void UpdateClientSideKeyEncryptionKey (this Azure.Storage.Blobs.BlobClient client, Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateClientSideKeyEncryptionKey(class Azure.Storage.Blobs.BlobClient client, class Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKey(Azure.Storage.Blobs.BlobClient,Azure.Storage.ClientSideEncryptionOptions,Azure.Storage.Blobs.Models.BlobRequestConditions,System.Threading.CancellationToken)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub UpdateClientSideKeyEncryptionKey (client As BlobClient, Optional encryptionOptionsOverride As ClientSideEncryptionOptions = Nothing, Optional conditions As BlobRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member UpdateClientSideKeyEncryptionKey : Azure.Storage.Blobs.BlobClient * Azure.Storage.ClientSideEncryptionOptions * Azure.Storage.Blobs.Models.BlobRequestConditions * System.Threading.CancellationToken -&gt; unit" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKey (client, encryptionOptionsOverride, conditions, cancellationToken)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -473,8 +495,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.Void</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.BlobClient" RefType="this" />
         <Parameter Name="encryptionOptionsOverride" Type="Azure.Storage.ClientSideEncryptionOptions" />
@@ -506,11 +531,11 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateClientSideKeyEncryptionKeyAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task UpdateClientSideKeyEncryptionKeyAsync (this Azure.Storage.Blobs.BlobClient client, Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task UpdateClientSideKeyEncryptionKeyAsync(class Azure.Storage.Blobs.BlobClient client, class Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKeyAsync(Azure.Storage.Blobs.BlobClient,Azure.Storage.ClientSideEncryptionOptions,Azure.Storage.Blobs.Models.BlobRequestConditions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UpdateClientSideKeyEncryptionKeyAsync (client As BlobClient, Optional encryptionOptionsOverride As ClientSideEncryptionOptions = Nothing, Optional conditions As BlobRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" />
-      <MemberSignature Language="F#" Value="static member UpdateClientSideKeyEncryptionKeyAsync : Azure.Storage.Blobs.BlobClient * Azure.Storage.ClientSideEncryptionOptions * Azure.Storage.Blobs.Models.BlobRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKeyAsync (client, encryptionOptionsOverride, conditions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task UpdateClientSideKeyEncryptionKeyAsync (this Azure.Storage.Blobs.BlobClient client, Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride = default, Azure.Storage.Blobs.Models.BlobRequestConditions conditions = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task UpdateClientSideKeyEncryptionKeyAsync(class Azure.Storage.Blobs.BlobClient client, class Azure.Storage.ClientSideEncryptionOptions encryptionOptionsOverride, class Azure.Storage.Blobs.Models.BlobRequestConditions conditions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="DocId" Value="M:Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKeyAsync(Azure.Storage.Blobs.BlobClient,Azure.Storage.ClientSideEncryptionOptions,Azure.Storage.Blobs.Models.BlobRequestConditions,System.Threading.CancellationToken)" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UpdateClientSideKeyEncryptionKeyAsync (client As BlobClient, Optional encryptionOptionsOverride As ClientSideEncryptionOptions = Nothing, Optional conditions As BlobRequestConditions = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task" FrameworkAlternate="azure-dotnet-preview" />
+      <MemberSignature Language="F#" Value="static member UpdateClientSideKeyEncryptionKeyAsync : Azure.Storage.Blobs.BlobClient * Azure.Storage.ClientSideEncryptionOptions * Azure.Storage.Blobs.Models.BlobRequestConditions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.UpdateClientSideKeyEncryptionKeyAsync (client, encryptionOptionsOverride, conditions, cancellationToken)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.Storage.Blobs</AssemblyName>
@@ -523,8 +548,11 @@
         <AssemblyVersion>12.15.0.0</AssemblyVersion>
         <AssemblyVersion>12.15.1.0</AssemblyVersion>
         <AssemblyVersion>12.16.0.0</AssemblyVersion>
+        <AssemblyVersion>12.17.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="azure-dotnet-preview">System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
       <Parameters>
         <Parameter Name="client" Type="Azure.Storage.Blobs.BlobClient" RefType="this" />
         <Parameter Name="encryptionOptionsOverride" Type="Azure.Storage.ClientSideEncryptionOptions" />

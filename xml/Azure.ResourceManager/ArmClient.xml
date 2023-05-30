@@ -18,6 +18,7 @@
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
     <AssemblyVersion>1.6.0.0</AssemblyVersion>
+    <AssemblyVersion>1.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -50,6 +51,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -80,6 +82,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
@@ -114,6 +117,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
@@ -150,6 +154,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credential" Type="Azure.Core.TokenCredential" />
@@ -188,6 +193,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.DataPolicyManifestResource</ReturnType>
@@ -226,6 +232,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.SubscriptionResource</ReturnType>
@@ -263,6 +270,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.ResourceManager.Resources.SubscriptionResource&gt;</ReturnType>
@@ -300,6 +308,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.FeatureResource</ReturnType>
@@ -338,6 +347,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.GenericResource</ReturnType>
@@ -375,6 +385,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.GenericResourceCollection</ReturnType>
@@ -407,6 +418,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.ManagementGroupPolicyDefinitionResource</ReturnType>
@@ -445,6 +457,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.ManagementGroupPolicySetDefinitionResource</ReturnType>
@@ -483,6 +496,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ManagementGroups.ManagementGroupResource</ReturnType>
@@ -521,6 +535,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.ManagementGroups.ManagementGroupCollection</ReturnType>
@@ -555,6 +570,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.ManagementLockResource</ReturnType>
@@ -593,6 +609,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.PolicyAssignmentResource</ReturnType>
@@ -607,33 +624,6 @@
             You can use <see cref="M:Azure.ResourceManager.Resources.PolicyAssignmentResource.CreateResourceIdentifier(System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Resources.PolicyAssignmentResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.PolicyAssignmentResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetPolicyExemptionResource">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.PolicyExemptionResource GetPolicyExemptionResource (Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.PolicyExemptionResource GetPolicyExemptionResource(class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArmClient.GetPolicyExemptionResource(Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPolicyExemptionResource (id As ResourceIdentifier) As PolicyExemptionResource" />
-      <MemberSignature Language="F#" Value="abstract member GetPolicyExemptionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.PolicyExemptionResource&#xA;override this.GetPolicyExemptionResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.PolicyExemptionResource" Usage="armClient.GetPolicyExemptionResource id" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.PolicyExemptionResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.PolicyExemptionResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Resources.PolicyExemptionResource.CreateResourceIdentifier(System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Resources.PolicyExemptionResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.PolicyExemptionResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,6 +648,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -709,6 +700,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.ResourceGroupResource</ReturnType>
@@ -723,33 +715,6 @@
             You can use <see cref="M:Azure.ResourceManager.Resources.ResourceGroupResource.CreateResourceIdentifier(System.String,System.String)" /> to create a <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
             </summary>
         <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.ResourceGroupResource" /> object. </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetResourceLinkResource">
-      <MemberSignature Language="C#" Value="public virtual Azure.ResourceManager.Resources.ResourceLinkResource GetResourceLinkResource (Azure.Core.ResourceIdentifier id);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.ResourceManager.Resources.ResourceLinkResource GetResourceLinkResource(class Azure.Core.ResourceIdentifier id) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArmClient.GetResourceLinkResource(Azure.Core.ResourceIdentifier)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceLinkResource (id As ResourceIdentifier) As ResourceLinkResource" />
-      <MemberSignature Language="F#" Value="abstract member GetResourceLinkResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.ResourceLinkResource&#xA;override this.GetResourceLinkResource : Azure.Core.ResourceIdentifier -&gt; Azure.ResourceManager.Resources.ResourceLinkResource" Usage="armClient.GetResourceLinkResource id" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Azure.ResourceManager</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Azure.ResourceManager.Resources.ResourceLinkResource</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="id" Type="Azure.Core.ResourceIdentifier" Index="0" FrameworkAlternate="azure-dotnet-preview" />
-      </Parameters>
-      <Docs>
-        <param name="id"> The resource ID of the resource to get. </param>
-        <summary>
-            Gets an object representing a <see cref="T:Azure.ResourceManager.Resources.ResourceLinkResource" /> along with the instance operations that can be performed on it but with no data.
-            You can use <see cref="M:Azure.ResourceManager.Resources.ResourceLinkResource.CreateResourceIdentifier(System.String)" /> to create a <see cref="T:Azure.ResourceManager.Resources.ResourceLinkResource" /><see cref="T:Azure.Core.ResourceIdentifier" /> from its components.
-            </summary>
-        <returns> Returns a <see cref="T:Azure.ResourceManager.Resources.ResourceLinkResource" /> object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -774,6 +739,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.ResourceProviderResource</ReturnType>
@@ -812,6 +778,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.SubscriptionPolicyDefinitionResource</ReturnType>
@@ -850,6 +817,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.SubscriptionPolicySetDefinitionResource</ReturnType>
@@ -888,6 +856,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.SubscriptionResource</ReturnType>
@@ -926,6 +895,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.SubscriptionCollection</ReturnType>
@@ -960,6 +930,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.TagResource</ReturnType>
@@ -998,6 +969,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.TenantPolicyDefinitionResource</ReturnType>
@@ -1036,6 +1008,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.TenantPolicySetDefinitionResource</ReturnType>
@@ -1074,6 +1047,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Response&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;</ReturnType>
@@ -1115,6 +1089,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;&gt;</ReturnType>
@@ -1147,13 +1122,14 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expand" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="expand"> The properties to include in the results. For example, use &amp;$expand=metadata in the query string to retrieve resource provider metadata. To include property aliases in response, use $expand=resourceTypes/aliases. </param>
@@ -1164,13 +1140,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTenantResourceProviders">
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProviders (int? top, string expand, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProviders (int? top, string expand, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.Pageable`1&lt;class Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProviders(valuetype System.Nullable`1&lt;int32&gt; top, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArmClient.GetTenantResourceProviders(System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTenantResourceProviders (top As Nullable(Of Integer), expand As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of TenantResourceProvider)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTenantResourceProviders (top As Nullable(Of Integer), expand As String, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of TenantResourceProvider)" />
       <MemberSignature Language="F#" Value="abstract member GetTenantResourceProviders : Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;&#xA;override this.GetTenantResourceProviders : Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;" Usage="armClient.GetTenantResourceProviders (top, expand, cancellationToken)" />
-      <MemberSignature Language="C#" Value="public virtual Azure.Pageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProviders (int? top = default, string expand = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTenantResourceProviders (Optional top As Nullable(Of Integer) = Nothing, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Pageable(Of TenantResourceProvider)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
@@ -1186,13 +1160,14 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the `top` parameter is not supported by service and will be removed in a future release.", false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the `top` parameter is not supported by service and will be removed in a future release.", false)&gt;]</AttributeName>
         </Attribute>
@@ -1226,13 +1201,14 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="expand" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="expand" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="expand"> The properties to include in the results. For example, use &amp;$expand=metadata in the query string to retrieve resource provider metadata. To include property aliases in response, use $expand=resourceTypes/aliases. </param>
@@ -1243,13 +1219,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetTenantResourceProvidersAsync">
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProvidersAsync (int? top, string expand, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProvidersAsync (int? top, string expand, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Azure.AsyncPageable`1&lt;class Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProvidersAsync(valuetype System.Nullable`1&lt;int32&gt; top, string expand, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Azure.ResourceManager.ArmClient.GetTenantResourceProvidersAsync(System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTenantResourceProvidersAsync (top As Nullable(Of Integer), expand As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of TenantResourceProvider)" FrameworkAlternate="azure-dotnet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTenantResourceProvidersAsync (top As Nullable(Of Integer), expand As String, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of TenantResourceProvider)" />
       <MemberSignature Language="F#" Value="abstract member GetTenantResourceProvidersAsync : Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;&#xA;override this.GetTenantResourceProvidersAsync : Nullable&lt;int&gt; * string * System.Threading.CancellationToken -&gt; Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt;" Usage="armClient.GetTenantResourceProvidersAsync (top, expand, cancellationToken)" />
-      <MemberSignature Language="C#" Value="public virtual Azure.AsyncPageable&lt;Azure.ResourceManager.Resources.Models.TenantResourceProvider&gt; GetTenantResourceProvidersAsync (int? top = default, string expand = default, System.Threading.CancellationToken cancellationToken = default);" FrameworkAlternate="azure-dotnet-preview" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTenantResourceProvidersAsync (Optional top As Nullable(Of Integer) = Nothing, Optional expand As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As AsyncPageable(Of TenantResourceProvider)" FrameworkAlternate="azure-dotnet-preview" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Azure.ResourceManager</AssemblyName>
@@ -1265,13 +1239,14 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="azure-dotnet">
+        <Attribute>
           <AttributeName Language="C#">[System.Obsolete("This method is obsolete as the `top` parameter is not supported by service and will be removed in a future release.", false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete as the `top` parameter is not supported by service and will be removed in a future release.", false)&gt;]</AttributeName>
         </Attribute>
@@ -1314,6 +1289,7 @@
         <AssemblyVersion>1.4.0.0</AssemblyVersion>
         <AssemblyVersion>1.5.0.0</AssemblyVersion>
         <AssemblyVersion>1.6.0.0</AssemblyVersion>
+        <AssemblyVersion>1.7.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Azure.ResourceManager.Resources.TenantCollection</ReturnType>

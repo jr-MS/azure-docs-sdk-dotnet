@@ -104,9 +104,13 @@
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Approve an approval task. </summary>
+        <summary>
+            [Protocol Method] Approve an approval task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -143,7 +147,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = client.ApproveApprovalTask(Guid.NewGuid(), RequestContent.Create(data));
+Response response = client.ApproveApprovalTask(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -169,9 +173,13 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Approve an approval task. </summary>
+        <summary>
+            [Protocol Method] Approve an approval task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -208,7 +216,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = await client.ApproveApprovalTaskAsync(Guid.NewGuid(), RequestContent.Create(data));
+Response response = await client.ApproveApprovalTaskAsync(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -234,9 +242,13 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="workflowRunId"> The workflow run id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Cancel a workflow run. </summary>
+        <summary>
+            [Protocol Method] Cancel a workflow run.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -273,7 +285,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = client.CancelWorkflowRun(Guid.NewGuid(), RequestContent.Create(data));
+Response response = client.CancelWorkflowRun(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -299,9 +311,13 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="workflowRunId"> The workflow run id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Cancel a workflow run. </summary>
+        <summary>
+            [Protocol Method] Cancel a workflow run.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -338,7 +354,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = await client.CancelWorkflowRunAsync(Guid.NewGuid(), RequestContent.Create(data));
+Response response = await client.CancelWorkflowRunAsync(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -364,10 +380,14 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="workflowId"> The workflow id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Create or replace a workflow. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Create or replace a workflow.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request and response payloads.
 
@@ -465,7 +485,7 @@ var data = new {
     actionDag = new {},
 };
 
-Response response = client.CreateOrReplaceWorkflow(Guid.NewGuid(), RequestContent.Create(data));
+Response response = client.CreateOrReplaceWorkflow(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("actionDag").ToString());
@@ -505,10 +525,14 @@ Console.WriteLine(result.GetProperty("description").ToString());
       </Parameters>
       <Docs>
         <param name="workflowId"> The workflow id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Create or replace a workflow. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Create or replace a workflow.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request and response payloads.
 
@@ -606,7 +630,7 @@ var data = new {
     actionDag = new {},
 };
 
-Response response = await client.CreateOrReplaceWorkflowAsync(Guid.NewGuid(), RequestContent.Create(data));
+Response response = await client.CreateOrReplaceWorkflowAsync(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("actionDag").ToString());
@@ -646,7 +670,11 @@ Console.WriteLine(result.GetProperty("description").ToString());
       <Docs>
         <param name="workflowId"> The workflow id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delete a workflow. </summary>
+        <summary>
+            [Protocol Method] Delete a workflow.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
@@ -657,7 +685,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = client.DeleteWorkflow(Guid.NewGuid());
+Response response = client.DeleteWorkflow(Guid.NewGuid(), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -683,7 +711,11 @@ Console.WriteLine(response.Status);
       <Docs>
         <param name="workflowId"> The workflow id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Delete a workflow. </summary>
+        <summary>
+            [Protocol Method] Delete a workflow.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>To be added.</remarks>
         <exception cref="T:Azure.RequestFailedException"> Service returned a non-success status code. </exception>
@@ -694,7 +726,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = await client.DeleteWorkflowAsync(Guid.NewGuid());
+Response response = await client.DeleteWorkflowAsync(Guid.NewGuid(), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -720,8 +752,12 @@ Console.WriteLine(response.Status);
       <Docs>
         <param name="workflowId"> The workflow id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get a specific workflow. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get a specific workflow.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -756,7 +792,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = client.GetWorkflow(Guid.NewGuid());
+Response response = client.GetWorkflow(Guid.NewGuid(), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("actionDag").ToString());
@@ -796,8 +832,12 @@ Console.WriteLine(result.GetProperty("description").ToString());
       <Docs>
         <param name="workflowId"> The workflow id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get a specific workflow. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get a specific workflow.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -832,7 +872,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = await client.GetWorkflowAsync(Guid.NewGuid());
+Response response = await client.GetWorkflowAsync(Guid.NewGuid(), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("actionDag").ToString());
@@ -872,8 +912,12 @@ Console.WriteLine(result.GetProperty("description").ToString());
       <Docs>
         <param name="workflowRunId"> The workflow run id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get a workflow run. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get a workflow run.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -910,7 +954,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = client.GetWorkflowRun(Guid.NewGuid());
+Response response = client.GetWorkflowRun(Guid.NewGuid(), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("id").ToString());
@@ -952,8 +996,12 @@ Console.WriteLine(result.GetProperty("detail").GetProperty("actions").ToString()
       <Docs>
         <param name="workflowRunId"> The workflow run id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get a workflow run. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get a workflow run.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -990,7 +1038,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = await client.GetWorkflowRunAsync(Guid.NewGuid());
+Response response = await client.GetWorkflowRunAsync(Guid.NewGuid(), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("id").ToString());
@@ -1040,7 +1088,11 @@ Console.WriteLine(result.GetProperty("detail").GetProperty("actions").ToString()
         <param name="workflowIds"> Filter items by workflow id list. </param>
         <param name="maxpagesize"> The maximum page size to get the items at one time. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List workflow runs. </summary>
+        <summary>
+            [Protocol Method] List workflow runs.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1072,9 +1124,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-foreach (var data in client.GetWorkflowRuns())
+foreach (var item in client.GetWorkflowRuns())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("workflowId").ToString());
     Console.WriteLine(result.GetProperty("startTime").ToString());
@@ -1090,9 +1142,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-foreach (var data in client.GetWorkflowRuns("<timeWindow>", "<orderby>", new String[]{"<runStatuses>"}, new String[]{"<workflowIds>"}, 1234))
+foreach (var item in client.GetWorkflowRuns("<timeWindow>", "<orderby>", new String[]{"<runStatuses>"}, new String[]{"<workflowIds>"}, 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("workflowId").ToString());
     Console.WriteLine(result.GetProperty("startTime").ToString());
@@ -1137,7 +1189,11 @@ foreach (var data in client.GetWorkflowRuns("<timeWindow>", "<orderby>", new Str
         <param name="workflowIds"> Filter items by workflow id list. </param>
         <param name="maxpagesize"> The maximum page size to get the items at one time. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List workflow runs. </summary>
+        <summary>
+            [Protocol Method] List workflow runs.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1169,9 +1225,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-await foreach (var data in client.GetWorkflowRunsAsync())
+await foreach (var item in client.GetWorkflowRunsAsync())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("workflowId").ToString());
     Console.WriteLine(result.GetProperty("startTime").ToString());
@@ -1187,9 +1243,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-await foreach (var data in client.GetWorkflowRunsAsync("<timeWindow>", "<orderby>", new String[]{"<runStatuses>"}, new String[]{"<workflowIds>"}, 1234))
+await foreach (var item in client.GetWorkflowRunsAsync("<timeWindow>", "<orderby>", new String[]{"<runStatuses>"}, new String[]{"<workflowIds>"}, 1234, new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("workflowId").ToString());
     Console.WriteLine(result.GetProperty("startTime").ToString());
@@ -1224,7 +1280,11 @@ await foreach (var data in client.GetWorkflowRunsAsync("<timeWindow>", "<orderby
       </Parameters>
       <Docs>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List all workflows. </summary>
+        <summary>
+            [Protocol Method] List all workflows.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1259,9 +1319,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-foreach (var data in client.GetWorkflows())
+foreach (var item in client.GetWorkflows(new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("triggers")[0].GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("triggers")[0].GetProperty("underGlossaryHierarchy").ToString());
@@ -1297,7 +1357,11 @@ foreach (var data in client.GetWorkflows())
       </Parameters>
       <Docs>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> List all workflows. </summary>
+        <summary>
+            [Protocol Method] List all workflows.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1332,9 +1396,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-await foreach (var data in client.GetWorkflowsAsync())
+await foreach (var item in client.GetWorkflowsAsync(new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("triggers")[0].GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("triggers")[0].GetProperty("underGlossaryHierarchy").ToString());
@@ -1372,8 +1436,12 @@ await foreach (var data in client.GetWorkflowsAsync())
       <Docs>
         <param name="taskId"> The task id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get a workflow task. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get a workflow task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1460,7 +1528,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = client.GetWorkflowTask(Guid.NewGuid());
+Response response = client.GetWorkflowTask(Guid.NewGuid(), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("type").ToString());
@@ -1506,8 +1574,12 @@ Console.WriteLine(result.GetProperty("expiryInfo").GetProperty("expirySettings")
       <Docs>
         <param name="taskId"> The task id. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get a workflow task. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Get a workflow task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the response payload.
 
@@ -1594,7 +1666,7 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-Response response = await client.GetWorkflowTaskAsync(Guid.NewGuid());
+Response response = await client.GetWorkflowTaskAsync(Guid.NewGuid(), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("type").ToString());
@@ -1654,7 +1726,11 @@ Console.WriteLine(result.GetProperty("expiryInfo").GetProperty("expirySettings")
         <param name="taskStatuses"> Filter workflow tasks by status. </param>
         <param name="workflowNameKeyword"> The key word which could used to filter workflow item with related workflow. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get all workflow tasks. </summary>
+        <summary>
+            [Protocol Method] Get all workflow tasks.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.Pageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1700,9 +1776,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-foreach (var data in client.GetWorkflowTasks())
+foreach (var item in client.GetWorkflowTasks())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("workflowRunId").ToString());
@@ -1720,9 +1796,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-foreach (var data in client.GetWorkflowTasks("<viewMode>", new String[]{"<workflowIds>"}, "<timeWindow>", 1234, "<orderby>", new String[]{"<taskTypes>"}, new String[]{"<taskStatuses>"}, "<workflowNameKeyword>"))
+foreach (var item in client.GetWorkflowTasks("<viewMode>", new String[]{"<workflowIds>"}, "<timeWindow>", 1234, "<orderby>", new String[]{"<taskTypes>"}, new String[]{"<taskStatuses>"}, "<workflowNameKeyword>", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("title").ToString());
@@ -1781,7 +1857,11 @@ foreach (var data in client.GetWorkflowTasks("<viewMode>", new String[]{"<workfl
         <param name="taskStatuses"> Filter workflow tasks by status. </param>
         <param name="workflowNameKeyword"> The key word which could used to filter workflow item with related workflow. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Get all workflow tasks. </summary>
+        <summary>
+            [Protocol Method] Get all workflow tasks.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The <see cref="T:Azure.AsyncPageable`1" /> from the service containing a list of <see cref="T:System.BinaryData" /> objects. Details of the body schema for each item in the collection are in the Remarks section below. </returns>
         <remarks>
 Below is the JSON schema for one item in the pageable response.
@@ -1827,9 +1907,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-await foreach (var data in client.GetWorkflowTasksAsync())
+await foreach (var item in client.GetWorkflowTasksAsync())
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("workflowRunId").ToString());
@@ -1847,9 +1927,9 @@ var credential = new DefaultAzureCredential();
 var endpoint = new Uri("<https://my-service.azure.com>");
 var client = new PurviewWorkflowServiceClient(endpoint, credential);
 
-await foreach (var data in client.GetWorkflowTasksAsync("<viewMode>", new String[]{"<workflowIds>"}, "<timeWindow>", 1234, "<orderby>", new String[]{"<taskTypes>"}, new String[]{"<taskStatuses>"}, "<workflowNameKeyword>"))
+await foreach (var item in client.GetWorkflowTasksAsync("<viewMode>", new String[]{"<workflowIds>"}, "<timeWindow>", 1234, "<orderby>", new String[]{"<taskTypes>"}, new String[]{"<taskStatuses>"}, "<workflowNameKeyword>", new RequestContext()))
 {
-    JsonElement result = JsonDocument.Parse(data.ToStream()).RootElement;
+    JsonElement result = JsonDocument.Parse(item.ToStream()).RootElement;
     Console.WriteLine(result.GetProperty("type").ToString());
     Console.WriteLine(result.GetProperty("id").ToString());
     Console.WriteLine(result.GetProperty("title").ToString());
@@ -1914,9 +1994,13 @@ await foreach (var data in client.GetWorkflowTasksAsync("<viewMode>", new String
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Reassign a workflow task. </summary>
+        <summary>
+            [Protocol Method] Reassign a workflow task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -1963,7 +2047,7 @@ var data = new {
     },
 };
 
-Response response = client.ReassignWorkflowTask(Guid.NewGuid(), RequestContent.Create(data));
+Response response = client.ReassignWorkflowTask(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -1989,9 +2073,13 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Reassign a workflow task. </summary>
+        <summary>
+            [Protocol Method] Reassign a workflow task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -2038,7 +2126,7 @@ var data = new {
     },
 };
 
-Response response = await client.ReassignWorkflowTaskAsync(Guid.NewGuid(), RequestContent.Create(data));
+Response response = await client.ReassignWorkflowTaskAsync(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -2064,9 +2152,13 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Reject an approval task. </summary>
+        <summary>
+            [Protocol Method] Reject an approval task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -2103,7 +2195,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = client.RejectApprovalTask(Guid.NewGuid(), RequestContent.Create(data));
+Response response = client.RejectApprovalTask(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -2129,9 +2221,13 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Reject an approval task. </summary>
+        <summary>
+            [Protocol Method] Reject an approval task.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -2168,7 +2264,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = await client.RejectApprovalTaskAsync(Guid.NewGuid(), RequestContent.Create(data));
+Response response = await client.RejectApprovalTaskAsync(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -2192,10 +2288,14 @@ Console.WriteLine(response.Status);
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Submit a user request for requestor, a user  request describes user ask to do operation(s) on Purview. If any workflow's trigger matches with an operation in request, a run of the workflow is created. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Submit a user request for requestor, a user  request describes user ask to do operation(s) on Purview. If any workflow's trigger matches with an operation in request, a run of the workflow is created.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request and response payloads.
 
@@ -2274,7 +2374,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = client.SubmitUserRequests(RequestContent.Create(data));
+Response response = client.SubmitUserRequests(RequestContent.Create(data), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("requestId").ToString());
@@ -2306,10 +2406,14 @@ Console.WriteLine(result.GetProperty("status").ToString());
         <Parameter Name="context" Type="Azure.RequestContext" />
       </Parameters>
       <Docs>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Submit a user request for requestor, a user  request describes user ask to do operation(s) on Purview. If any workflow's trigger matches with an operation in request, a run of the workflow is created. </summary>
-        <returns> The response returned from the service. Details of the response body schema are in the Remarks section below. </returns>
+        <summary>
+            [Protocol Method] Submit a user request for requestor, a user  request describes user ask to do operation(s) on Purview. If any workflow's trigger matches with an operation in request, a run of the workflow is created.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
+        <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request and response payloads.
 
@@ -2388,7 +2492,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = await client.SubmitUserRequestsAsync(RequestContent.Create(data));
+Response response = await client.SubmitUserRequestsAsync(RequestContent.Create(data), new RequestContext());
 
 JsonElement result = JsonDocument.Parse(response.ContentStream).RootElement;
 Console.WriteLine(result.GetProperty("requestId").ToString());
@@ -2422,9 +2526,13 @@ Console.WriteLine(result.GetProperty("status").ToString());
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Update the status of a workflow task request. </summary>
+        <summary>
+            [Protocol Method] Update the status of a workflow task request.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -2465,7 +2573,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = client.UpdateTaskStatus(Guid.NewGuid(), RequestContent.Create(data));
+Response response = client.UpdateTaskStatus(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
@@ -2491,9 +2599,13 @@ Console.WriteLine(response.Status);
       </Parameters>
       <Docs>
         <param name="taskId"> The task id. </param>
-        <param name="content"> The content to send as the body of the request. Details of the request body schema are in the Remarks section below. </param>
+        <param name="content"> The content to send as the body of the request. </param>
         <param name="context"> The request context, which can override default behaviors of the client pipeline on a per-call basis. </param>
-        <summary> Update the status of a workflow task request. </summary>
+        <summary>
+            [Protocol Method] Update the status of a workflow task request.
+            <list type="bullet"><item><description>
+            This <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/ProtocolMethods.md">protocol method</see> allows explicit creation of the request and processing of the response for advanced scenarios.
+            </description></item></list></summary>
         <returns> The response returned from the service. </returns>
         <remarks>
 Below is the JSON schema for the request payload.
@@ -2534,7 +2646,7 @@ var data = new {
     comment = "<comment>",
 };
 
-Response response = await client.UpdateTaskStatusAsync(Guid.NewGuid(), RequestContent.Create(data));
+Response response = await client.UpdateTaskStatusAsync(Guid.NewGuid(), RequestContent.Create(data), new RequestContext());
 Console.WriteLine(response.Status);
 ]]></code></example>
       </Docs>
