@@ -3,12 +3,12 @@ title: Azure Communication Rooms client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.Communication.Rooms, communication
 author: acsdevx-msft
 ms.author: acsdevx-msft
-ms.date: 05/17/2023
+ms.date: 05/30/2023
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: communication
 ---
-# Azure Communication Rooms client library for .NET - version 1.0.0-beta.2 
+# Azure Communication Rooms client library for .NET - version 1.0.0-alpha.20230530.1 
 
 
 This package contains a C# SDK for the Rooms Service of Azure Communication Services.
@@ -204,8 +204,8 @@ This project has adopted the [Microsoft Open Source Code of Conduct][coc]. For m
 [nextsteps]: https://learn.microsoft.com/azure/communication-services/quickstarts/rooms/get-started-rooms?tabs=windows&pivots=programming-language-csharp
 [nuget]: https://www.nuget.org/
 [product_docs]: /azure/communication-services/overview
-[source]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Rooms_1.0.0-beta.2/sdk/communication/Azure.Communication.Rooms/src
-[source_samples]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.Communication.Rooms_1.0.0-beta.2/sdk/communication/Azure.Communication.Rooms/tests/Samples
+[source]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/communication/Azure.Communication.Rooms/src
+[source_samples]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/communication/Azure.Communication.Rooms/tests/Samples
 
 <!-- TODO -->
 Update the sample code links once the sdk is published
