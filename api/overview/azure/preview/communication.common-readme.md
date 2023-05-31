@@ -8,7 +8,7 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: communication
 ---
-# Azure Communication Common client library for .NET - version 2.0.0-alpha.20230531.1 
+# Azure Communication Common client library for .NET - version 2.0.0-alpha.20230531.2 
 
 
 This package contains common code for Azure Communication Service libraries.
