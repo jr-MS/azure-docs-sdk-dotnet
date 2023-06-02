@@ -12,5 +12,9 @@
   "ArtifactName": "Azure.ResourceManager.StoragePool",
   "ReleaseStatus": "2022-07-12",
   "DocsCiConfigProperties": "tfm=netstandard2.0;isPrerelease=true",
-  "MSDocService": "placeholder"
+  "MSDocService": "placeholder",
+  "Namespaces": [
+    "Azure.ResourceManager.StoragePool",
+    "Azure.ResourceManager.StoragePool.Models"
+  ]
 }
