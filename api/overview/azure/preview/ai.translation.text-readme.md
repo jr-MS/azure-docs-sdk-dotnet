@@ -3,12 +3,12 @@ title: Azure Text Translation client library for .NET
 keywords: Azure, dotnet, SDK, API, Azure.AI.Translation.Text, translation
 author: mikeymcz
 ms.author: mimat
-ms.date: 04/18/2023
+ms.date: 06/06/2023
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: translation
 ---
-# Azure Text Translation client library for .NET - version 1.0.0-beta.1 
+# Azure Text Translation client library for .NET - version 1.0.0-alpha.20230606.1 
 
 
 Text translation is a cloud-based REST API feature of the Translator service that uses neural machine translation technology to enable quick and accurate source-to-target text translation in real time across all supported languages.
@@ -25,7 +25,7 @@ Use the Text Translation client library for .NET to:
 
 * Return grammatical structure and context examples for the source term and target term pair.
 
-[Source code](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/src) | [API reference documentation](https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-reference) | [Product documentation](https://learn.microsoft.com/azure/cognitive-services/translator/)
+[Source code](https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/src) | [API reference documentation](https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-reference) | [Product documentation](https://learn.microsoft.com/azure/cognitive-services/translator/)
 
 ## Getting started
 
@@ -95,12 +95,12 @@ We guarantee that all client instance methods are thread-safe and independent of
 
 ### Additional concepts
 <!-- CLIENT COMMON BAR -->
-[Client options](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
-[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
-[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
-[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
-[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/core/Azure.Core/samples/Diagnostics.md) |
-[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/core/Azure.Core/README.md#mocking) |
+[Client options](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#configuring-service-clients-using-clientoptions) |
+[Accessing the response](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#accessing-http-response-details-using-responset) |
+[Long-running operations](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#consuming-long-running-operations-using-operationt) |
+[Handling failures](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#reporting-errors-requestfailedexception) |
+[Diagnostics](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md) |
+[Mocking](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/README.md#mocking) |
 [Client lifetime](https://devblogs.microsoft.com/azure-sdk/lifetime-management-and-thread-safety-guarantees-of-azure-sdk-net-clients/)
 <!-- CLIENT COMMON BAR -->
 
@@ -354,13 +354,13 @@ When you submit a pull request, a CLA-bot will automatically determine whether y
 This project has adopted the [Microsoft Open Source Code of Conduct][code_of_conduct]. For more information see the [Code of Conduct FAQ][coc_faq] or contact [opencode@microsoft.com][coc_contact] with any additional questions or comments.
 
 <!-- LINKS -->
-[contributing]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/CONTRIBUTING.md
+[contributing]: https://github.com/Azure/azure-sdk-for-net/blob/main/CONTRIBUTING.md
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 [coc_contact]: mailto:opencode@microsoft.com
 
-[translator_client_class]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/src/Custom/TextTranslationClient.cs
+[translator_client_class]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/translation/Azure.AI.Translation.Text/src/Custom/TextTranslationClient.cs
 
 [translator_auth]: https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-reference#authentication
 [translator_limits]: https://learn.microsoft.com/azure/cognitive-services/translator/request-limits
@@ -372,17 +372,17 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [dictionarylookup_doc]: https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-dictionary-lookup
 [dictionaryexamples_doc]: https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-dictionary-examples
 
-[client_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/samples/Sample0_CreateClient.md
-[languages_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/samples/Sample1_GetLanguages.md
-[translate_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/samples/Sample2_Translate.md
-[transliterate_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/samples/Sample3_Transliterate.md
-[breaksentence_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/samples/Sample4_BreakSentence.md
-[dictionarylookup_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/samples/Sample5_DictionaryLookup.md
-[dictionaryexamples_sample]: https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/translation/Azure.AI.Translation.Text/samples/Sample6_DictionaryExamples.md
+[client_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/samples/Sample0_CreateClient.md
+[languages_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/samples/Sample1_GetLanguages.md
+[translate_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/samples/Sample2_Translate.md
+[transliterate_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/samples/Sample3_Transliterate.md
+[breaksentence_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/samples/Sample4_BreakSentence.md
+[dictionarylookup_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/samples/Sample5_DictionaryLookup.md
+[dictionaryexamples_sample]: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/translation/Azure.AI.Translation.Text/samples/Sample6_DictionaryExamples.md
 
 [translator_resource_create]: https://learn.microsoft.com/azure/cognitive-services/Translator/create-translator-resource
 
-[logging]: https://github.com/Azure/azure-sdk-for-net/blob/Azure.AI.Translation.Text_1.0.0-beta.1/sdk/core/Azure.Core/samples/Diagnostics.md
+[logging]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Diagnostics.md
 
 [azure_cli]: /cli/azure
 [azure_sub]: https://azure.microsoft.com/free/dotnet/
