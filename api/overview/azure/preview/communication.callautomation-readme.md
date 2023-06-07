@@ -8,7 +8,7 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: communication
 ---
-# Azure Communication CallAutomation client library for .NET - version 1.0.0-alpha.20230607.2 
+# Azure Communication CallAutomation client library for .NET - version 1.0.0-alpha.20230607.3 
 
 
 This package contains a C# SDK for Azure Communication Call Automation.
@@ -20,7 +20,7 @@ This package contains a C# SDK for Azure Communication Call Automation.
 Install the Azure Communication CallAutomation client library for .NET with [NuGet][nuget]:
 
 ```dotnetcli
-dotnet add package Azure.Communication.CallAutomation --prerelease
+dotnet add package Azure.Communication.CallAutomation
 ```
 
 ### Prerequisites
@@ -98,11 +98,11 @@ public IActionResult OnMidConnectionCallBackEvent([FromBody] CloudEvent[] events
                     # cast the event into a ParticipantUpdated event and do something with it. Eg. iterate through the participants
                     ParticipantsUpdated updatedEvent = (ParticipantsUpdated)ev;
                     break;
-                case AddParticipantsSucceeded ev:
-                    # logic to handle an AddParticipantsSucceeded event
+                case AddParticipantSucceeded ev:
+                    # logic to handle an AddParticipantSucceeded event
                     break;
-                case AddParticipantsFailed ev:
-                    # logic to handle an AddParticipantsFailed event
+                case AddParticipantFailed ev:
+                    # logic to handle an AddParticipantFailed event
                     break;
                 case CallTransferAccepted ev:
                     # logic to handle CallTransferAccepted event
@@ -166,10 +166,10 @@ CancellationToken token = cts.Token;
 try
 {
     // this will wait until CreateCall is completed or Timesout!
-    CreateCallEventResult eventResult = await createCallResult.WaitForEventAsync(token);
+    CreateCallEventResult eventResult = await createCallResult.WaitForEventProcessorAsync(token);
 
     // Once this is recieved, you know the call is now connected.
-    CallConnected returnedEvent = eventResult.SuccessEvent;
+    CallConnected returnedEvent = eventResult.SuccessResult;
 
     // ...Do more actions, such as Play or AddParticipant, since the call is established...
 }
